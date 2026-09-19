@@ -2,39 +2,54 @@
 
 Chữ ký HTML đồng bộ nhận diện với website: nền trắng, vạch đỏ thương hiệu, logo tile tối.
 
-## Cách dùng
+## Hai bản chữ ký
 
-**Nhấp đúp vào `chu-ky-meli.html`** để mở bằng trình duyệt. Trang hiện ra sẽ có bản xem trước,
-nút sao chép và hướng dẫn cài cho Gmail / Outlook / Apple Mail.
+| File | Dùng cho |
+|---|---|
+| `chu-ky-ca-nhan.html` | Hộp thư cá nhân — `thanhtam@melinetwork.vn` |
+| `chu-ky-cong-ty.html` | Hộp thư chung — `contact@melinetwork.vn`, `info@`, `hotro@`… |
 
-File tự chứa mọi thứ — không cần cài đặt gì, không cần chạy server. Vừa là bản xem trước,
-vừa là mã nguồn chữ ký, nên không bao giờ lệch nhau giữa hai bản.
+Khác nhau ở khối đầu: bản cá nhân là **tên người + chức danh**, bản công ty là
+**tên thương hiệu + định vị**. Phần còn lại giống hệt nhau để nhìn vào là biết cùng một nhà.
+
+**Nhấp đúp vào file** để mở bằng trình duyệt. Trang hiện ra có bản xem trước, nút sao chép
+và hướng dẫn cài cho Gmail / Outlook / Apple Mail. File tự chứa mọi thứ — không cần cài đặt,
+không cần chạy server. Vừa là bản xem trước vừa là mã nguồn nên không bao giờ lệch nhau.
 
 Logo nằm ở `../public/email/logo-meli.png`, phục vụ công khai tại
 `https://www.melinetwork.vn/email/logo-meli.png`.
 
 ## Trạng thái nội dung
 
-| Mục | Giá trị |
-|---|---|
-| Họ và tên | Nguyễn Thanh Tâm |
-| Chức danh | Founder & CEO |
-| Email | thanhtam@melinetwork.vn |
-| Điện thoại | 0967 773 300 |
-| Website | www.melinetwork.vn |
-| **Link mạng xã hội** | **chưa có — đang để `#`** |
+| Mục | Bản cá nhân | Bản công ty |
+|---|---|---|
+| Dòng chính | Nguyễn Thanh Tâm | MELI NETWORK |
+| Dòng phụ | Founder & CEO | MCN · Agency Truyền thông · Thương mại số |
+| Email | thanhtam@melinetwork.vn | contact@melinetwork.vn |
+| Điện thoại | 0967 773 300 | 0559 476 329 |
+| Website | www.melinetwork.vn | www.melinetwork.vn |
+| Địa chỉ | — | **chưa có, dòng đang bị ẩn** |
+| Link mạng xã hội | **chưa có — đang để `#`** | **chưa có — đang để `#`** |
 
-Bốn link YouTube / TikTok / Facebook / LinkedIn ở cuối chữ ký đang trỏ vào `#`, bấm vào
-không đi đâu cả. Mở `chu-ky-meli.html` bằng trình soạn thảo, tìm ghi chú `▼ CẦN SỬA`
-rồi thay bằng địa chỉ thật. Chưa có kênh nào thì xoá hẳn dòng đó — thà không có còn hơn
-có link chết.
+Bốn link YouTube / TikTok / Facebook / LinkedIn ở cả hai bản đang trỏ vào `#`, bấm vào không
+đi đâu cả. Mở file bằng trình soạn thảo, tìm ghi chú `▼ CẦN SỬA` rồi thay bằng địa chỉ thật.
+Chưa có kênh nào thì xoá hẳn dòng đó — thà không có còn hơn có link chết.
 
-Số điện thoại hiển thị dạng nội địa `0967 773 300` nhưng link bấm gọi dùng dạng quốc tế
-`tel:+84967773300`, để đối tác nước ngoài bấm vào vẫn gọi được. Nếu đổi số, nhớ sửa **cả hai**.
+Bản công ty có sẵn dòng địa chỉ nhưng đang ẩn bằng dấu comment. Có địa chỉ chính thức thì
+xoá hai dấu ngoặc comment bao quanh rồi điền vào.
+
+Số điện thoại hiển thị dạng nội địa nhưng link bấm gọi dùng dạng quốc tế (`tel:+84…`), để đối
+tác nước ngoài bấm vào vẫn gọi được. Nếu đổi số, nhớ sửa **cả hai chỗ**.
+
+## Hộp thư chung nhiều người cùng trực
+
+Cài đặt chữ ký lưu theo **tài khoản đăng nhập**, không theo hộp thư. Nên nếu `contact@` được
+nhiều nhân sự truy cập, mỗi người phải tự cài trên máy mình. Riêng Google Workspace, quản trị
+viên có thể áp chữ ký cho cả tổ chức: Admin console → Apps → Gmail → Compliance → Append footer.
 
 ## Làm chữ ký cho người khác trong công ty
 
-Copy `chu-ky-meli.html` thành file mới (ví dụ `chu-ky-nguyenvana.html`), đổi tên, chức danh,
+Copy `chu-ky-ca-nhan.html` thành file mới (ví dụ `chu-ky-nguyenvana.html`), đổi tên, chức danh,
 email, điện thoại. Giữ nguyên phần còn lại để cả công ty đồng bộ một kiểu.
 
 ## Vì sao viết bằng `<table>` chứ không phải `<div>` + flexbox
