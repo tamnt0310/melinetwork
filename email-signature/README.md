@@ -13,19 +13,24 @@ vừa là mã nguồn chữ ký, nên không bao giờ lệch nhau giữa hai b�
 Logo nằm ở `../public/email/logo-meli.png`, phục vụ công khai tại
 `https://www.melinetwork.vn/email/logo-meli.png`.
 
-## Cần sửa trước khi dùng
+## Trạng thái nội dung
 
-Mở `chu-ky-meli.html` bằng trình soạn thảo văn bản, tìm khối
-`>>> BẮT ĐẦU CHỮ KÝ <<<` rồi sửa 3 chỗ có ghi chú `▼ THAY`:
+| Mục | Giá trị |
+|---|---|
+| Họ và tên | Nguyễn Thanh Tâm |
+| Chức danh | Founder & CEO |
+| Email | thanhtam@melinetwork.vn |
+| Điện thoại | 0967 773 300 |
+| Website | www.melinetwork.vn |
+| **Link mạng xã hội** | **chưa có — đang để `#`** |
 
-1. **Họ và tên** — đang để *Nguyễn Thành Tâm*
-2. **Chức danh** — đang để *Nhà sáng lập & Giám đốc điều hành*
-3. **Số điện thoại** — đang để *+84 900 000 000*. Sửa **cả hai chỗ**: phần `tel:+84900000000`
-   trong link và phần chữ hiển thị bên dưới
+Bốn link YouTube / TikTok / Facebook / LinkedIn ở cuối chữ ký đang trỏ vào `#`, bấm vào
+không đi đâu cả. Mở `chu-ky-meli.html` bằng trình soạn thảo, tìm ghi chú `▼ CẦN SỬA`
+rồi thay bằng địa chỉ thật. Chưa có kênh nào thì xoá hẳn dòng đó — thà không có còn hơn
+có link chết.
 
-Ngoài ra thay 4 dấu `#` ở cuối khối chữ ký bằng link YouTube / TikTok / Facebook / LinkedIn thật.
-
-Email `thanhtam@melinetwork.vn` và website đã điền sẵn, không cần sửa.
+Số điện thoại hiển thị dạng nội địa `0967 773 300` nhưng link bấm gọi dùng dạng quốc tế
+`tel:+84967773300`, để đối tác nước ngoài bấm vào vẫn gọi được. Nếu đổi số, nhớ sửa **cả hai**.
 
 ## Làm chữ ký cho người khác trong công ty
 
