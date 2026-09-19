@@ -160,7 +160,12 @@ Biểu mẫu đã có sẵn: kiểm tra dữ liệu đầu vào, bẫy bot (trư
 
 ## 7. Đổi tên miền cho SEO
 
-Sau khi có tên miền thật, sửa hằng số `SITE_URL` (đang là `https://melinetwork.vn`) trong 3 file:
+Website đang chạy tại **https://www.melinetwork.vn** (domain gốc `melinetwork.vn`
+được Vercel 308-redirect về bản `www`).
+
+Hằng số `SITE_URL` đã được đặt là `https://www.melinetwork.vn` trong 3 file dưới đây.
+Nếu sau này đổi tên miền, sửa cả 3 cho khớp — và phải dùng đúng bản chính (bản **không**
+bị redirect), vì Zalo và một số trình thu thập không theo redirect khi lấy ảnh xem trước:
 
 - [`app/layout.tsx`](app/layout.tsx)
 - [`app/sitemap.ts`](app/sitemap.ts)
@@ -216,7 +221,6 @@ lib/
 - [ ] Thay toàn bộ nội dung `⚠️ MẪU` trong `lib/content.ts`
 - [ ] Bổ sung ảnh thật vào `public/` và khai báo trong `lib/images.ts`
 - [ ] Thay logo Meli và logo đối tác
-- [ ] Đổi `SITE_URL` sang tên miền thật (3 file ở mục 7)
 - [ ] Cấu hình Resend để nhận email từ biểu mẫu
 - [ ] Xin phép khách hàng trước khi đăng tên/logo của họ
 - [ ] Gắn Google Analytics hoặc Meta Pixel nếu cần đo lường

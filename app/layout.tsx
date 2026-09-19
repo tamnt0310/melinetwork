@@ -11,8 +11,9 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-bvp",
 });
 
-// ⚠️ Đổi thành tên miền thật sau khi deploy để ảnh chia sẻ mạng xã hội hoạt động.
-const SITE_URL = "https://melinetwork.vn";
+// Bản chính của website. Domain gốc melinetwork.vn được Vercel 308-redirect về đây,
+// nên mọi URL tuyệt đối (sitemap, robots, ảnh OG) đều phải trỏ tới bản www này.
+const SITE_URL = "https://www.melinetwork.vn";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
     "TikTok Shop",
     "affiliate marketing",
   ],
+  // Báo cho Google biết đâu là địa chỉ chính thức của trang, tránh bị coi là
+  // nội dung trùng lặp giữa bản có www và không www.
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "vi_VN",
