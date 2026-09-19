@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#15151E"/>
+      <stop offset="100%" stop-color="#07070A"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#FF4650"/>
+      <stop offset="55%" stop-color="#E81123"/>
+      <stop offset="100%" stop-color="#A30C16"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#DCDCE4"/>
+      <stop offset="100%" stop-color="#9A9AA8"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="54" fill="url(#tile)"/>
+  <g transform="translate(35 46) scale(1.7)">
+    <g transform="matrix(-1 0 0 1 100 0)"><path d="M 3 84 C 3 44, 15 24, 40 24 C 55 24, 60 42, 62 66 L 55 75 C 52 50, 48 40, 39 40 C 28 40, 23 58, 23 84 Z" fill="url(#silver)"/></g>
+    <circle cx="60" cy="12" r="8" fill="url(#silver)"/>
+    <path d="M 3 84 C 3 44, 15 24, 40 24 C 55 24, 60 42, 62 66 L 55 75 C 52 50, 48 40, 39 40 C 28 40, 23 58, 23 84 Z" fill="url(#red)"/>
+    <circle cx="40" cy="12" r="8" fill="url(#red)"/>
+  </g>
+</svg>
