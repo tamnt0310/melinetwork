@@ -4,7 +4,6 @@ import { ImageResponse } from "next/og";
    Next.js tự sinh ảnh này, không cần file JPG thủ công.
    Muốn dùng ảnh thiết kế riêng: xoá file này và đặt `app/opengraph-image.jpg` (1200×630). */
 
-export const runtime = "edge";
 export const alt = "Meli Network — Hệ sinh thái sáng tạo nội dung & thương mại số";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

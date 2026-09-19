@@ -38,6 +38,10 @@ git remote add origin https://github.com/<tài-khoản>/<tên-repo>.git
 git push -u origin main
 ```
 
+> ⚠️ **Vercel chặn deploy nếu Next.js dính lỗi bảo mật đã công bố.** Trước mỗi lần deploy lớn,
+> chạy `npm audit` — nếu báo lỗi ở `next`, nâng phiên bản trong `package.json` rồi `npm install`.
+> Dự án đang dùng `overrides` để ép `postcss` về bản đã vá vì Next ghim sẵn một bản cũ.
+
 Trên [vercel.com](https://vercel.com): **Add New → Project → Import** repo vừa đẩy lên.
 Vercel tự nhận diện Next.js, không cần cấu hình gì thêm. Bấm **Deploy**.
 
@@ -216,3 +220,4 @@ lib/
 - [ ] Cấu hình Resend để nhận email từ biểu mẫu
 - [ ] Xin phép khách hàng trước khi đăng tên/logo của họ
 - [ ] Gắn Google Analytics hoặc Meta Pixel nếu cần đo lường
+- [ ] Chạy `npm audit` và xử lý hết cảnh báo trước khi deploy
