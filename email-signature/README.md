@@ -2,33 +2,35 @@
 
 Chữ ký HTML đồng bộ nhận diện với website: nền trắng, vạch đỏ thương hiệu, logo tile tối.
 
-## File trong thư mục này
+## Cách dùng
 
-| File | Dùng để làm gì |
-|---|---|
-| `xem-truoc.html` | **Mở file này bằng trình duyệt.** Xem trước chữ ký, bấm nút sao chép, kèm hướng dẫn cài từng ứng dụng |
-| `chu-ky.html` | Mã nguồn chữ ký — sửa nội dung ở đây |
+**Nhấp đúp vào `chu-ky-meli.html`** để mở bằng trình duyệt. Trang hiện ra sẽ có bản xem trước,
+nút sao chép và hướng dẫn cài cho Gmail / Outlook / Apple Mail.
 
-Logo nằm ở `../public/email/logo-meli.png`, được phục vụ công khai tại
+File tự chứa mọi thứ — không cần cài đặt gì, không cần chạy server. Vừa là bản xem trước,
+vừa là mã nguồn chữ ký, nên không bao giờ lệch nhau giữa hai bản.
+
+Logo nằm ở `../public/email/logo-meli.png`, phục vụ công khai tại
 `https://www.melinetwork.vn/email/logo-meli.png`.
 
 ## Cần sửa trước khi dùng
 
-Mở `chu-ky.html`, tìm 3 ghi chú `▼ THAY`:
+Mở `chu-ky-meli.html` bằng trình soạn thảo văn bản, tìm khối
+`>>> BẮT ĐẦU CHỮ KÝ <<<` rồi sửa 3 chỗ có ghi chú `▼ THAY`:
 
 1. **Họ và tên** — đang để *Nguyễn Thành Tâm*
 2. **Chức danh** — đang để *Nhà sáng lập & Giám đốc điều hành*
 3. **Số điện thoại** — đang để *+84 900 000 000*. Sửa **cả hai chỗ**: phần `tel:+84900000000`
    trong link và phần chữ hiển thị bên dưới
 
-Ngoài ra thay 4 dấu `#` ở cuối file bằng link YouTube / TikTok / Facebook / LinkedIn thật.
+Ngoài ra thay 4 dấu `#` ở cuối khối chữ ký bằng link YouTube / TikTok / Facebook / LinkedIn thật.
 
 Email `thanhtam@melinetwork.vn` và website đã điền sẵn, không cần sửa.
 
 ## Làm chữ ký cho người khác trong công ty
 
-Copy `chu-ky.html` thành file mới, đổi tên, chức danh, email, điện thoại. Giữ nguyên
-phần còn lại để cả công ty đồng bộ một kiểu.
+Copy `chu-ky-meli.html` thành file mới (ví dụ `chu-ky-nguyenvana.html`), đổi tên, chức danh,
+email, điện thoại. Giữ nguyên phần còn lại để cả công ty đồng bộ một kiểu.
 
 ## Vì sao viết bằng `<table>` chứ không phải `<div>` + flexbox
 
