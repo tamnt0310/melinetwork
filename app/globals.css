@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MELI NETWORK — Design tokens
+   Bảng màu: Đen (nền) · Đỏ thương hiệu (nhấn) · Trắng (chữ)
+   ============================================================ */
+@theme {
+  --color-ink-950: #07070a;
+  --color-ink-900: #0c0c11;
+  --color-ink-850: #121218;
+  --color-ink-800: #191920;
+  --color-ink-700: #23232c;
+  --color-line: #2a2a35;
+
+  --color-brand-300: #ff6b72;
+  --color-brand-400: #ff3b44;
+  --color-brand-500: #e81123;
+  --color-brand-600: #c30d1b;
+  --color-brand-700: #8f0812;
+
+  --color-fg: #f5f5f7;
+  --color-muted: #9b9baa;
+  --color-faint: #6b6b7b;
+
+  --font-sans: var(--font-bvp), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-xl2: 1.25rem;
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-pulse-slow: pulseSlow 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @keyframes pulseSlow {
+    0%, 100% { opacity: .45; }
+    50%      { opacity: .8; }
+  }
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-brand-500);
+  color: #fff;
+}
+
+/* Thanh cuộn */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-ink-950); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-700);
+  border-radius: 999px;
+  border: 2px solid var(--color-ink-950);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-700); }
+
+/* Vòng focus cho bàn phím */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-brand-400);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- Tiện ích dùng lại ---------- */
+
+/* Nền lưới mảnh phía sau các section tối */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Quầng sáng đỏ mềm */
+.glow-brand {
+  background: radial-gradient(
+    closest-side,
+    rgba(232, 17, 35, 0.55),
+    rgba(232, 17, 35, 0.16) 55%,
+    transparent 100%
+  );
+  filter: blur(18px);
+}
+
+/* Chữ gradient trong sắc đỏ thương hiệu (không pha trắng để không lẫn với phần chữ trắng liền kề) */
+.text-gradient-brand {
+  background: linear-gradient(100deg, #ff7f86 0%, var(--color-brand-400) 38%, var(--color-brand-500) 68%, var(--color-brand-600) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Viền gradient 1px cho thẻ */
+.card-ring {
+  isolation: isolate;
+}
+/* Chỉ tự đặt position khi phần tử chưa được Tailwind định vị sẵn
+   (nếu không, `.card-ring` sẽ ghi đè `absolute`/`fixed`/`sticky`). */
+.card-ring:where(:not(.absolute):not(.fixed):not(.sticky):not(.relative)) {
+  position: relative;
+}
+.card-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.02) 42%, rgba(232, 17, 35, 0.35));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hiệu ứng xuất hiện khi cuộn tới */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Dải logo chạy ngang */
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .marquee-track { animation: none !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
