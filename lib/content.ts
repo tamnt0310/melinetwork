@@ -61,58 +61,58 @@ const vi = {
 
   about: {
     eyebrow: "Đôi nét về Meli",
-    title: "Một hệ sinh\u00A0thái, ba năng\u00A0lực, cùng một mục\u00A0tiêu",
+    title: "Một hệ sinh\u00A0thái ba năng\u00A0lực, cùng một mục\u00A0tiêu",
     lead:
-      "Meli Network được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Chúng tôi không chỉ quản lý kênh — chúng tôi xây dựng nền tảng để nhà sáng tạo sống được bằng nghề và để thương hiệu chạm đúng người cần chạm.",
+      "Được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Meli Network xây dựng hệ sinh thái kết nối Creator, Content và Commerce — giúp nhà sáng tạo phát triển bền vững, thương hiệu tiếp cận đúng khách hàng và nội dung tạo ra giá trị thực.",
     body:
-      "Từ một nhóm nhỏ vận hành kênh nội dung, Meli đã phát triển thành hệ sinh thái khép kín: mạng lưới đa kênh (MCN), đơn vị truyền thông — marketing, và bộ phận thương mại số. Ba mảng này không hoạt động rời rạc mà bổ trợ cho nhau — một nhà sáng tạo trong mạng lưới có thể trở thành gương mặt của chiến dịch thương hiệu, rồi trở thành người bán hàng hiệu quả trên sàn.", // ⚠️ MẪU
+      "Từ một đội ngũ vận hành kênh nội dung, Meli phát triển thành hệ sinh thái gồm MCN, Media & Marketing và Commerce, kết nối xuyên suốt từ phát triển Creator → xây dựng nội dung → triển khai chiến dịch → thúc đẩy thương mại.",
     pillars: [
-      { title: "Minh bạch", desc: "Doanh thu, hợp đồng và quyền lợi được công khai rõ ràng với mọi đối tác." },
-      { title: "Dài hạn", desc: "Chúng tôi chọn đi cùng nhau nhiều năm thay vì tối ưu một chiến dịch." },
-      { title: "Dữ liệu", desc: "Mọi quyết định nội dung đều dựa trên số liệu hiệu suất thực tế." },
+      { title: "Minh bạch", desc: "Rõ ràng trong hợp tác, doanh thu và quyền lợi. Đảm bảo các thông tin và giá trị đối với đối tác." },
+      { title: "Bền vững", desc: "Ưu tiên giá trị dài hạn, xây dựng mối quan hệ hợp tác ổn định và cùng phát triển thay vì chỉ tập trung vào kết quả ngắn hạn." },
+      { title: "Hiệu quả", desc: "Mọi hoạt động được tối ưu dựa trên dữ liệu và hiệu suất thực tế, từ đó đưa ra quyết định chính xác và tạo ra kết quả đo lường được." },
     ],
   },
 
   services: {
     eyebrow: "Năng lực cốt lõi",
-    title: "Ba mảng vận\u00A0hành, một đầu\u00A0mối duy\u00A0nhất",
+    title: "Ba năng\u00A0lực, một hệ sinh\u00A0thái",
     desc:
-      "Thương hiệu và nhà sáng tạo chỉ cần làm việc với một đội ngũ. Phần còn lại — từ sản xuất tới phân phối và bán hàng — Meli lo.",
+      "Kết nối toàn bộ chuỗi giá trị từ Creator, Content đến Commerce trong một hệ thống thống nhất. Meli đồng hành cùng thương hiệu và nhà sáng tạo từ phát triển nội dung, truyền thông đến thương mại — với một đầu mối quản lý xuyên suốt, tối ưu nguồn lực và hiệu quả triển khai.",
     items: [
       {
         tag: "01",
         name: "Meli Creator Network",
-        kicker: "MCN — Mạng lưới đa kênh",
-        desc: "Đồng hành cùng nhà sáng tạo trên YouTube, TikTok và Facebook: từ định hướng nội dung tới tối ưu doanh thu và bảo vệ bản quyền.",
+        kicker: "MCN · Mạng lưới Creator đa nền tảng",
+        desc: "Đồng hành cùng Creator trên TikTok, YouTube và Facebook — từ phát triển kênh, tối ưu nội dung đến doanh thu và bản quyền.",
         points: [
           "Phát triển & tối ưu kênh đa nền tảng",
-          "Bảo hộ bản quyền, xử lý gậy bản quyền",
+          "Quản lý & bảo vệ bản quyền nội dung",
           "Đối soát & thanh toán doanh thu minh bạch",
-          "Đào tạo, hỗ trợ pháp lý và thuế cho creator",
+          "Đào tạo & hỗ trợ vận hành cho Creator",
         ],
       },
       {
         tag: "02",
         name: "Meli Media",
-        kicker: "Agency Truyền thông — Marketing",
-        desc: "Xây dựng và triển khai chiến dịch truyền thông tích hợp cho thương hiệu, từ ý tưởng tới kết quả đo đếm được.",
+        kicker: "Agency · Truyền thông & Marketing",
+        desc: "Đồng hành cùng thương hiệu từ chiến lược, sáng tạo đến triển khai và đo lường, kết nối nội dung với đúng khách hàng mục tiêu.",
         points: [
           "Chiến lược truyền thông & định vị thương hiệu",
-          "Booking KOL / KOC theo ngành hàng",
-          "Sản xuất nội dung: TVC, viral clip, photo",
-          "Quảng cáo đa nền tảng & báo cáo hiệu suất",
+          "KOL/KOC Marketing theo ngành hàng",
+          "Sản xuất TVC, Video, Photo & Social Content",
+          "Quảng cáo đa nền tảng & đo lường hiệu suất",
         ],
       },
       {
         tag: "03",
         name: "Meli Commerce",
-        kicker: "Affiliate & Thương mại số",
-        desc: "Chuyển lượt xem thành đơn hàng: vận hành gian hàng, livestream bán hàng và mạng lưới tiếp thị liên kết.",
+        kicker: "Affiliate · Social Commerce",
+        desc: "Đồng hành cùng thương hiệu từ vận hành gian hàng, Livestream đến Affiliate, kết nối nội dung với chuyển đổi và tối ưu hiệu quả kinh doanh.",
         points: [
-          "Vận hành gian hàng TikTok Shop, Shopee",
+          "Vận hành gian hàng TikTok Shop & Shopee",
           "Livestream bán hàng & kịch bản chuyển đổi",
-          "Mạng lưới affiliate quy mô lớn",
-          "Tư vấn ngành hàng, giá và chính sách hoa hồng",
+          "Xây dựng & vận hành mạng lưới Affiliate",
+          "Tư vấn ngành hàng, giá bán & chính sách hoa hồng",
         ],
       },
     ],
@@ -120,8 +120,8 @@ const vi = {
 
   cases: {
     eyebrow: "Dự án tiêu biểu",
-    title: "Kết\u00A0quả nói thay lời giới\u00A0thiệu",
-    desc: "Một vài chiến dịch và dự án Meli đã đồng hành trong thời gian gần đây.", // ⚠️ MẪU
+    title: "Những con\u00A0số nói lên năng\u00A0lực",
+    desc: "Khám phá các chiến dịch và dự án tiêu biểu, nơi năng lực của Meli được thể hiện qua những kết quả thực tế.",
     metricLabel: "Kết quả",
     // ⚠️ MẪU — Thay bằng case study thật (tên khách hàng cần có sự đồng ý trước khi công bố)
     items: [
@@ -157,24 +157,41 @@ const vi = {
   },
 
   partners: {
-    eyebrow: "Niềm tin của đối tác",
-    title: "Được lựa\u00A0chọn bởi các thương\u00A0hiệu và nền\u00A0tảng",
-    desc: "Meli Network là đối tác chính thức của các nền tảng lớn và đồng hành cùng nhiều nhãn hàng trong nước.", // ⚠️ MẪU
+    eyebrow: "Niềm tin từ đối tác",
+    title: "Được tin\u00A0tưởng bởi các thương\u00A0hiệu và nền\u00A0tảng",
+    desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, Marketing và Commerce.",
     // ⚠️ MẪU — thay bằng logo thật (xem hướng dẫn trong README)
     logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
-    testimonial: {
-      quote:
-        "Điều khiến chúng tôi gắn bó với Meli không phải là con số của một chiến dịch, mà là cách đội ngũ chủ động báo cáo, phản hồi và giữ đúng cam kết trong suốt hai năm hợp tác.",
-      name: "Nguyễn Văn A", // ⚠️ MẪU
-      role: "Giám đốc Marketing, Thương hiệu đối tác", // ⚠️ MẪU
-    },
+    quotesTitle: "Chia sẻ từ đối tác và Creator",
+    // ⚠️ Ba trích dẫn dưới đây chưa có tên người nói. Điền `name` và `role` khi đã
+    // xin phép — để trống thì thẻ vẫn hiển thị đẹp, chỉ là không có người đứng tên.
+    testimonials: [
+      {
+        quote:
+          "Meli hỗ trợ rất sát từ việc phát triển nội dung, vận hành kênh đến các cơ hội hợp tác. Mình cảm thấy có một team thực sự đồng hành phía sau.",
+        name: "",
+        role: "",
+      },
+      {
+        quote:
+          "Điều mình đánh giá cao ở Meli là cách làm việc rõ ràng và chuyên nghiệp. Các vấn đề về doanh thu, hợp tác hay bản quyền đều được team hỗ trợ khá nhanh.",
+        name: "",
+        role: "",
+      },
+      {
+        quote:
+          "Meli hiểu khá rõ cách kết nối thương hiệu với Creator phù hợp. Team chủ động, linh hoạt và bám sát mục tiêu của chiến dịch.",
+        name: "",
+        role: "",
+      },
+    ],
   },
 
   culture: {
     eyebrow: "Inside Meli",
     title: "Con\u00A0người là hạ\u00A0tầng thật\u00A0sự của chúng\u00A0tôi",
     desc:
-      "Công nghệ và nền tảng thay đổi mỗi năm. Thứ giữ Meli đứng vững là một đội ngũ hiểu nội dung, hiểu thị trường và hiểu nhau.",
+      "Công nghệ có thể thay đổi mỗi năm. Điều giữ Meli phát triển là đội ngũ hiểu nội dung, hiểu thị trường và hiểu cách cùng nhau tạo ra giá trị.",
     values: [
       { title: "Làm thật, đo thật", desc: "Không báo cáo màu mè. Con số nào cũng phải truy được về nguồn." },
       { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng câu hỏi: điều này có tốt cho nhà sáng tạo không?" },
@@ -291,58 +308,58 @@ const en: typeof vi = {
 
   about: {
     eyebrow: "About Meli",
-    title: "One ecosystem, three capabilities, a single goal",
+    title: "One ecosystem of three capabilities, one goal",
     lead:
-      "Meli Network was built on a simple belief: good content deserves a good system behind it. We don't just manage channels — we build the infrastructure that lets creators make a living and lets brands reach the people who matter.",
+      "Built on the belief that good content deserves a good system behind it. Meli Network connects Creator, Content and Commerce — helping creators grow sustainably, brands reach the right customers, and content turn into real value.",
     body:
-      "What began as a small team running content channels has grown into a closed-loop ecosystem: a multi-channel network, a media and marketing arm, and a digital commerce unit. The three don't operate in isolation — a creator in the network can become the face of a brand campaign, and then a high-performing seller on marketplace livestreams.",
+      "From a team running content channels, Meli grew into an ecosystem spanning MCN, Media & Marketing and Commerce — connected end to end, from developing creators → building content → running campaigns → driving commerce.",
     pillars: [
-      { title: "Transparent", desc: "Revenue, contracts and entitlements are laid out clearly for every partner." },
-      { title: "Long-term", desc: "We choose to walk together for years rather than optimise a single campaign." },
-      { title: "Data-led", desc: "Every content decision is grounded in real performance numbers." },
+      { title: "Transparent", desc: "Clear on partnership terms, revenue and entitlements, so every partner knows exactly where they stand." },
+      { title: "Sustainable", desc: "We prioritise long-term value and stable partnerships that grow together, rather than chasing short-term results." },
+      { title: "Effective", desc: "Every activity is optimised against real data and performance, so decisions are accurate and outcomes measurable." },
     ],
   },
 
   services: {
     eyebrow: "Core capabilities",
-    title: "Three operating arms, one point of contact",
+    title: "Three capabilities, one ecosystem",
     desc:
-      "Brands and creators work with a single team. Everything else — production, distribution, selling — sits with Meli.",
+      "Connecting the whole value chain — Creator, Content and Commerce — in one unified system. Meli works alongside brands and creators from content development through communications to commerce, with a single point of coordination that optimises both resources and execution.",
     items: [
       {
         tag: "01",
         name: "Meli Creator Network",
-        kicker: "MCN — Multi-channel network",
-        desc: "Standing beside creators on YouTube, TikTok and Facebook: from content direction to revenue optimisation and rights protection.",
+        kicker: "MCN · Multi-platform creator network",
+        desc: "Standing beside creators on TikTok, YouTube and Facebook — from channel growth and content optimisation to revenue and rights.",
         points: [
           "Multi-platform channel growth & optimisation",
-          "Copyright protection and strike resolution",
+          "Content rights management & protection",
           "Transparent revenue reconciliation & payouts",
-          "Training, legal and tax support for creators",
+          "Training & operational support for creators",
         ],
       },
       {
         tag: "02",
         name: "Meli Media",
-        kicker: "Media & marketing agency",
-        desc: "Building and running integrated campaigns for brands, from the first idea to measurable outcomes.",
+        kicker: "Agency · Communications & marketing",
+        desc: "Working with brands from strategy and creative through execution and measurement, connecting content with the right target audience.",
         points: [
           "Communications strategy & brand positioning",
-          "KOL / KOC booking by product category",
-          "Content production: TVC, viral clips, photography",
-          "Multi-platform advertising & performance reporting",
+          "KOL/KOC marketing by product category",
+          "TVC, video, photo & social content production",
+          "Multi-platform advertising & performance measurement",
         ],
       },
       {
         tag: "03",
         name: "Meli Commerce",
-        kicker: "Affiliate & digital commerce",
-        desc: "Turning views into orders: storefront operations, live commerce and a large-scale affiliate network.",
+        kicker: "Affiliate · Social commerce",
+        desc: "Working with brands from storefront operations and livestreaming to affiliate, connecting content with conversion and optimising commercial results.",
         points: [
           "TikTok Shop & Shopee storefront operations",
           "Live selling with conversion-led scripting",
-          "Large-scale affiliate network activation",
-          "Category, pricing and commission advisory",
+          "Building & running the affiliate network",
+          "Category, pricing & commission advisory",
         ],
       },
     ],
@@ -350,8 +367,8 @@ const en: typeof vi = {
 
   cases: {
     eyebrow: "Selected work",
-    title: "Results speak louder than a deck",
-    desc: "A few of the campaigns and projects Meli has recently worked on.",
+    title: "Numbers that show what we can do",
+    desc: "A look at the campaigns and projects where Meli's capability shows up in real results.",
     metricLabel: "Result",
     items: [
       {
@@ -386,23 +403,38 @@ const en: typeof vi = {
   },
 
   partners: {
-    eyebrow: "Trusted by",
-    title: "Chosen by leading brands and platforms",
-    desc: "Meli Network is an official partner of major platforms and works with brands across Vietnam.",
+    eyebrow: "Trusted by partners",
+    title: "Trusted by leading brands and platforms",
+    desc: "Meli Network partners with major platforms and works alongside many brands across Creator, Marketing and Commerce.",
     logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
-    testimonial: {
-      quote:
-        "What kept us with Meli wasn't the numbers from one campaign — it was how proactively the team reported, responded and kept their commitments across two years of work.",
-      name: "Nguyen Van A",
-      role: "Marketing Director, partner brand",
-    },
+    quotesTitle: "What partners and creators say",
+    testimonials: [
+      {
+        quote:
+          "Meli supports us closely — content development, channel operations, partnership opportunities. It genuinely feels like having a team behind you.",
+        name: "",
+        role: "",
+      },
+      {
+        quote:
+          "What I value about Meli is how clear and professional they are. Questions about revenue, partnerships or rights get handled quickly.",
+        name: "",
+        role: "",
+      },
+      {
+        quote:
+          "Meli understands how to match a brand with the right creator. The team is proactive, flexible and stays close to the campaign's goals.",
+        name: "",
+        role: "",
+      },
+    ],
   },
 
   culture: {
     eyebrow: "Inside Meli",
     title: "People are our real infrastructure",
     desc:
-      "Technology and platforms change every year. What keeps Meli standing is a team that understands content, understands the market, and understands each other.",
+      "Technology can change every year. What keeps Meli growing is a team that understands content, understands the market, and understands how to create value together.",
     values: [
       { title: "Real work, real numbers", desc: "No decorative reporting. Every figure has to trace back to a source." },
       { title: "Creator at the centre", desc: "Every process starts with one question: is this good for the creator?" },
