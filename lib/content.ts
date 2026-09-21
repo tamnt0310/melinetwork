@@ -229,7 +229,7 @@ const vi = {
     info: [
       {
         label: "Văn phòng",
-        value: "Khu nhà vườn 02, khu 12 ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hà Nội",
+        value: "Khu nhà vườn 12, ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hà Nội",
       },
       { label: "Email", value: "contact@melinetwork.vn", href: "mailto:contact@melinetwork.vn" },
       // Hiển thị dạng nội địa, link bấm gọi dùng dạng quốc tế để gọi được từ nước ngoài
@@ -466,7 +466,7 @@ const en: typeof vi = {
     info: [
       {
         label: "Office",
-        value: "Khu nhà vườn 02, khu 12, ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hanoi, Vietnam",
+        value: "Khu nhà vườn 12, ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hanoi, Vietnam",
       },
       { label: "Email", value: "contact@melinetwork.vn", href: "mailto:contact@melinetwork.vn" },
       { label: "Phone", value: "+84 559 476 329", href: "tel:+84559476329" },
