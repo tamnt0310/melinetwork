@@ -37,42 +37,56 @@ export default function Culture() {
           {/* Ảnh ghép + khối tuyển dụng */}
           <div className="flex flex-col gap-6">
             <Reveal>
+              {/* Hai ảnh ghép: ảnh nhỏ tự cao bằng ảnh lớn nhờ grid kéo giãn */}
               <div className="grid grid-cols-5 gap-4">
                 <div className="card-ring col-span-3 aspect-3/4 overflow-hidden rounded-[1.5rem] bg-ink-900">
-                  <MediaSlot src={images.culture} alt="" seed={5} />
+                  <MediaSlot
+                    src={images.culture}
+                    alt=""
+                    seed={5}
+                    sizes="(max-width: 1024px) 60vw, 330px"
+                  />
                 </div>
-                <div className="col-span-2 flex flex-col gap-4">
-                  <div className="card-ring aspect-square overflow-hidden rounded-[1.5rem] bg-ink-900">
-                    <MediaSlot src={images.cultureAlt} alt="" seed={6} />
-                  </div>
-                  <div className="card-ring flex flex-1 flex-col justify-center rounded-[1.5rem] bg-brand-500/10 p-5">
-                    <div className="text-3xl font-extrabold text-brand-400">
-                      {t.culture.jobs.count}
-                    </div>
-                    <div className="mt-1 text-xs leading-snug text-muted">
-                      {t.culture.jobs.openings}
-                    </div>
-                  </div>
+                <div className="card-ring col-span-2 overflow-hidden rounded-[1.5rem] bg-ink-900">
+                  <MediaSlot
+                    src={images.cultureAlt}
+                    alt=""
+                    seed={6}
+                    sizes="(max-width: 1024px) 40vw, 220px"
+                  />
                 </div>
               </div>
             </Reveal>
 
             <Reveal delay={120}>
               <div className="card-ring relative overflow-hidden rounded-[1.5rem] bg-ink-900/80 p-7 sm:p-8">
-                <div aria-hidden className="glow-brand absolute -bottom-20 -right-16 h-52 w-52 rounded-full opacity-45" />
-                <h3 className="relative text-xl font-extrabold tracking-tight text-white">
-                  {t.culture.jobs.title}
+                <div
+                  aria-hidden
+                  className="glow-brand absolute -bottom-20 -right-16 h-52 w-52 rounded-full opacity-45"
+                />
+                <h3 className="relative text-balance text-xl font-extrabold tracking-tight text-white">
+                  {t.culture.invite.title}
                 </h3>
                 <p className="relative mt-3 text-sm leading-relaxed text-muted">
-                  {t.culture.jobs.desc}
+                  {t.culture.invite.desc}
                 </p>
                 <a
                   href="#contact"
                   className="group relative mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-400 transition-colors hover:text-brand-300"
                 >
-                  {t.culture.jobs.cta}
-                  <svg viewBox="0 0 16 16" className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none">
-                    <path d="M2 8h11m0 0-4-4m4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  {t.culture.invite.cta}
+                  <svg
+                    viewBox="0 0 16 16"
+                    className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                  >
+                    <path
+                      d="M2 8h11m0 0-4-4m4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </a>
               </div>

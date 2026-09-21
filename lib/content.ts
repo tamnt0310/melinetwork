@@ -18,7 +18,7 @@ const vi = {
   meta: {
     title: "Meli Network — Hệ sinh thái sáng tạo nội dung & thương mại số",
     description:
-      "Meli Network kết nối nhà sáng tạo, thương hiệu và người tiêu dùng: quản lý kênh đa nền tảng (MCN), chiến dịch truyền thông và vận hành thương mại điện tử.",
+      "Meli Network kết nối Creator, thương hiệu và người tiêu dùng: quản lý kênh đa nền tảng (MCN), chiến dịch truyền thông và vận hành thương mại điện tử.",
   },
 
   nav: {
@@ -40,7 +40,7 @@ const vi = {
     titleLead: "Biến nội dung sáng\u00A0tạo thành",
     titleAccent: "tăng\u00A0trưởng bền\u00A0vững",
     desc:
-      "Meli Network là hệ sinh thái đồng hành cùng nhà sáng tạo và thương hiệu Việt — từ phát triển kênh đa nền tảng, xây dựng chiến dịch truyền thông, đến vận hành bán hàng trên các sàn thương mại điện tử.",
+      "Meli Network là hệ sinh thái đồng hành cùng Creator và thương hiệu Việt — từ phát triển kênh đa nền tảng, xây dựng chiến dịch truyền thông, đến vận hành bán hàng trên các sàn thương mại điện tử.",
     ctaPrimary: "Hợp tác cùng Meli",
     ctaSecondary: "Khám phá hệ sinh thái",
     scroll: "Cuộn xuống",
@@ -48,14 +48,12 @@ const vi = {
 
   // ⚠️ MẪU — TOÀN BỘ SỐ LIỆU DƯỚI ĐÂY LÀ GIẢ ĐỊNH. Thay bằng số thật.
   stats: {
-    note: "Số liệu cập nhật quý gần nhất", // ⚠️ MẪU
-    // ⚠️ MẪU — 4 con số dưới đây chưa được xác nhận, cần thay bằng số liệu thật.
+    note: "Số liệu cập nhật quý gần nhất",
     // Lưới tự giãn theo số ô (1-4), xem components/Stats.tsx.
     items: [
-      { value: "250", suffix: "+", label: "Kênh & nhà sáng tạo đồng hành" },
-      { value: "1.2", suffix: " tỷ", label: "Lượt xem mỗi tháng" },
-      { value: "180", suffix: "+", label: "Chiến dịch thương hiệu đã triển khai" },
-      { value: "6", suffix: "", label: "Nền tảng vận hành song song" },
+      { value: "100", suffix: "+", label: "Kênh & Creator đồng hành" },
+      { value: "500", suffix: " triệu", label: "Lượt xem mỗi tháng" },
+      { value: "150", suffix: "+", label: "Chiến dịch thương hiệu đã triển khai" },
     ],
   },
 
@@ -64,7 +62,7 @@ const vi = {
     title:
       "Hệ sinh\u00A0thái kết\u00A0nối Creator, Media & Commerce: từ nội\u00A0dung tốt đến giá\u00A0trị thực",
     lead:
-      "Được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Meli Network xây dựng hệ sinh thái kết nối Creator, Content và Commerce — giúp nhà sáng tạo phát triển bền vững, thương hiệu tiếp cận đúng khách hàng và nội dung tạo ra giá trị thực.",
+      "Được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Meli Network xây dựng hệ sinh thái kết nối Creator, Content và Commerce — giúp Creator phát triển bền vững, thương hiệu tiếp cận đúng khách hàng và nội dung tạo ra giá trị thực.",
     body:
       "Từ một đội ngũ vận hành kênh nội dung, Meli phát triển thành hệ sinh thái gồm MCN, Media & Marketing và Commerce, kết nối xuyên suốt từ phát triển Creator → xây dựng nội dung → triển khai chiến dịch → thúc đẩy thương mại.",
     pillars: [
@@ -78,7 +76,7 @@ const vi = {
     eyebrow: "Năng lực cốt lõi",
     title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái toàn\u00A0diện",
     desc:
-      "Kết nối toàn bộ chuỗi giá trị từ Creator, Content đến Commerce trong một hệ thống thống nhất. Meli đồng hành cùng thương hiệu và nhà sáng tạo từ phát triển nội dung, truyền thông đến thương mại — với một đầu mối quản lý xuyên suốt, tối ưu nguồn lực và hiệu quả triển khai.",
+      "Kết nối toàn bộ chuỗi giá trị từ Creator, Content đến Commerce trong một hệ thống thống nhất. Meli đồng hành cùng thương hiệu và Creator từ phát triển nội dung, truyền thông đến thương mại — với một đầu mối quản lý xuyên suốt, tối ưu nguồn lực và hiệu quả triển khai.",
     items: [
       {
         tag: "01",
@@ -132,7 +130,7 @@ const vi = {
       },
       {
         title: "300K+ Followers — Hàng triệu lượt yêu thích",
-        desc: "Xây dựng cộng đồng hơn 300K người theo dõi với hàng triệu lượt yêu thích trên nền tảng. Nội dung chân thật, nhất quán giúp Creator tạo kết nối và duy trì sức hút với cộng đồng.",
+        desc: "Nội dung chân thật, nhất quán giúp Creator xây được kết nối lâu dài và giữ sức hút với cộng đồng của mình.",
         metric: "",
       },
       {
@@ -194,15 +192,13 @@ const vi = {
       "Công nghệ có thể thay đổi mỗi năm. Điều giữ Meli phát triển là đội ngũ hiểu nội dung, hiểu thị trường và hiểu cách cùng nhau tạo ra giá trị.",
     values: [
       { title: "Làm thật, đo thật", desc: "Không báo cáo màu mè. Con số nào cũng phải truy được về nguồn." },
-      { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng câu hỏi: điều này có tốt cho nhà sáng tạo không?" },
+      { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng câu hỏi: điều này có tốt cho Creator không?" },
       { title: "Học nhanh hơn thuật toán", desc: "Nền tảng đổi luật liên tục — đội ngũ Meli đổi cách làm còn nhanh hơn." },
     ],
-    jobs: {
-      title: "Chúng\u00A0tôi đang tìm thêm người đồng\u00A0hành",
-      desc: "Nếu bạn yêu nội dung số và muốn làm ở nơi mọi ý tưởng đều được thử, Meli đang mở cửa.",
-      cta: "Xem vị trí đang tuyển",
-      openings: "vị trí đang mở", // ⚠️ MẪU
-      count: "7",
+    invite: {
+      title: "Mọi hợp\u00A0tác đều bắt\u00A0đầu từ một cuộc trò\u00A0chuyện",
+      desc: "Dù bạn là Creator muốn phát triển kênh hay thương hiệu cần triển khai chiến dịch, việc đầu tiên đội ngũ Meli làm là ngồi nghe bạn kể về mục tiêu của mình — trước khi đề xuất bất cứ điều gì.",
+      cta: "Trò chuyện cùng đội ngũ Meli",
     },
   },
 
@@ -252,13 +248,8 @@ const vi = {
     colTitleContact: "Liên hệ",
     services: ["Meli Creator Network", "Meli Media", "Meli Commerce"],
     socialTitle: "Theo dõi Meli",
-    // ⚠️ MẪU — thay bằng link mạng xã hội thật
-    socials: [
-      { name: "YouTube", href: "#" },
-      { name: "TikTok", href: "#" },
-      { name: "Facebook", href: "#" },
-      { name: "LinkedIn", href: "#" },
-    ],
+    // ⚠️ CẦN SỬA: thay "#" bằng địa chỉ trang Facebook thật của Meli.
+    socials: [{ name: "Facebook", href: "#" }],
     legal: "Bản quyền thuộc về Meli Network.",
     company: "CÔNG TY TNHH MELI CHANNEL — MST: 0111356259",
     backToTop: "Lên đầu trang",
@@ -301,10 +292,9 @@ const en: typeof vi = {
   stats: {
     note: "Figures from the most recent quarter",
     items: [
-      { value: "250", suffix: "+", label: "Channels & creators in the network" },
-      { value: "1.2", suffix: "B", label: "Monthly views generated" },
-      { value: "180", suffix: "+", label: "Brand campaigns delivered" },
-      { value: "6", suffix: "", label: "Platforms operated in parallel" },
+      { value: "100", suffix: "+", label: "Channels & creators in the network" },
+      { value: "500", suffix: "M", label: "Monthly views generated" },
+      { value: "150", suffix: "+", label: "Brand campaigns delivered" },
     ],
   },
 
@@ -381,7 +371,7 @@ const en: typeof vi = {
       },
       {
         title: "300K+ followers — millions of likes",
-        desc: "Building a community of over 300,000 followers with millions of likes across platforms. Honest, consistent content helps creators connect and hold their audience's attention.",
+        desc: "Honest, consistent content helps creators build lasting connections and hold their community's attention.",
         metric: "",
       },
       {
@@ -444,12 +434,10 @@ const en: typeof vi = {
       { title: "Creator at the centre", desc: "Every process starts with one question: is this good for the creator?" },
       { title: "Learn faster than the algorithm", desc: "Platforms change the rules constantly — our team changes faster." },
     ],
-    jobs: {
-      title: "We're looking for more people to build with",
-      desc: "If you love digital content and want to work somewhere every idea gets tested, Meli's door is open.",
-      cta: "See open roles",
-      openings: "open roles",
-      count: "7",
+    invite: {
+      title: "Every partnership starts with a conversation",
+      desc: "Whether you're a creator looking to grow a channel or a brand with a campaign to run, the first thing our team does is listen to your goals — before proposing anything at all.",
+      cta: "Talk to the Meli team",
     },
   },
 
@@ -498,12 +486,7 @@ const en: typeof vi = {
     colTitleContact: "Contact",
     services: ["Meli Creator Network", "Meli Media", "Meli Commerce"],
     socialTitle: "Follow Meli",
-    socials: [
-      { name: "YouTube", href: "#" },
-      { name: "TikTok", href: "#" },
-      { name: "Facebook", href: "#" },
-      { name: "LinkedIn", href: "#" },
-    ],
+    socials: [{ name: "Facebook", href: "#" }],
     legal: "Meli Network. All rights reserved.",
     company: "MELI CHANNEL CO., LTD — Tax ID: 0111356259",
     backToTop: "Back to top",

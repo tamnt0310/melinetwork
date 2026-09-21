@@ -55,8 +55,8 @@ function StatItem({
       className={
         "relative border-line/50 px-2 py-8 text-center sm:px-6 " +
         (singleRow
-          ? // Một hàng: chỉ cần vạch ngăn giữa các ô
-            "border-l [&:first-child]:border-l-0"
+          ? // Xếp dọc trên điện thoại (vạch ngang), dàn ngang từ sm (vạch dọc)
+            "border-b [&:last-child]:border-b-0 sm:border-b-0 sm:border-l sm:[&:first-child]:border-l-0"
           : // Hai hàng trên mobile, một hàng từ lg: phải bỏ vạch đúng chỗ
             "border-b border-l [&:nth-child(2n+1)]:border-l-0 [&:nth-child(n+3)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n+1)]:border-l lg:[&:nth-child(4n+1)]:border-l-0")
       }
@@ -74,8 +74,10 @@ function StatItem({
  *  văn bản tĩnh — ghép chuỗi kiểu `grid-cols-${n}` sẽ không sinh ra CSS. */
 const GRID: Record<number, string> = {
   1: "grid grid-cols-1",
-  2: "grid grid-cols-2",
-  3: "grid grid-cols-3",
+  // Từ 1-3 ô: xếp dọc trên điện thoại rồi mới dàn ngang, vì con số dạng
+  // "500 triệu" chia 3 cột ở màn hình hẹp sẽ bị bóp vỡ chữ.
+  2: "grid grid-cols-1 sm:grid-cols-2",
+  3: "grid grid-cols-1 sm:grid-cols-3",
   4: "grid grid-cols-2 lg:grid-cols-4",
 };
 
