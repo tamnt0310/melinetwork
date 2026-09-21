@@ -37,24 +37,13 @@ export default function Culture() {
           {/* Ảnh ghép + khối tuyển dụng */}
           <div className="flex flex-col gap-6">
             <Reveal>
-              {/* Hai ảnh ghép: ảnh nhỏ tự cao bằng ảnh lớn nhờ grid kéo giãn */}
-              <div className="grid grid-cols-5 gap-4">
-                <div className="card-ring col-span-3 aspect-3/4 overflow-hidden rounded-[1.5rem] bg-ink-900">
-                  <MediaSlot
-                    src={images.culture}
-                    alt=""
-                    seed={5}
-                    sizes="(max-width: 1024px) 60vw, 330px"
-                  />
-                </div>
-                <div className="card-ring col-span-2 overflow-hidden rounded-[1.5rem] bg-ink-900">
-                  <MediaSlot
-                    src={images.cultureAlt}
-                    alt=""
-                    seed={6}
-                    sizes="(max-width: 1024px) 40vw, 220px"
-                  />
-                </div>
+              <div className="card-ring relative aspect-video overflow-hidden rounded-[1.5rem] bg-ink-900">
+                <MediaSlot
+                  src={images.culture}
+                  alt="Đội ngũ Meli Network trong một chương trình cộng đồng"
+                  seed={5}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                />
               </div>
             </Reveal>
 

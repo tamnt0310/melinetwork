@@ -8,10 +8,9 @@
  * ==========================================================================*/
 
 export const images = {
-  hero: "",        // 1200 × 1500 (dọc 4:5) — ảnh ekip / studio / creator đang quay
-  about: "",       // 1200 × 900  (ngang 4:3) — ảnh văn phòng hoặc buổi họp nội dung
-  culture: "",     //  900 × 1100 (dọc)       — ảnh đội ngũ Meli
-  cultureAlt: "",  //  900 × 700  (ngang)     — ảnh hoạt động nội bộ / team building
+  hero: "/images/hero.jpg",                          // 1000 × 1000 (vuông) — góc studio sản xuất
+  about: "/images/founder-nguyen-thanh-tam.jpg",     //  914 × 1218 (dọc 3:4) — chân dung Founder
+  culture: "/images/doi-ngu-meli.jpg",               // 1413 × 795 (ngang 16:9) — đội ngũ & cộng đồng
   // Bảng ghi rõ ảnh "số liệu minh chứng" kích thước 596 × 372 px — khớp đúng
   // khung 16:10 của thẻ dự án, nên thả vào là vừa khít, không bị cắt.
   cases: [

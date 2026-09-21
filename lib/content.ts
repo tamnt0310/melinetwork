@@ -59,12 +59,12 @@ const vi = {
 
   about: {
     eyebrow: "Đôi nét về Meli",
-    title:
-      "Hệ sinh\u00A0thái kết\u00A0nối Creator, Media & Commerce: từ nội\u00A0dung tốt đến giá\u00A0trị thực",
+    title: "Nội\u00A0dung tốt xứng\u00A0đáng có một hệ\u00A0thống tốt phía\u00A0sau",
+    founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
     lead:
-      "Được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Meli Network xây dựng hệ sinh thái kết nối Creator, Content và Commerce — giúp Creator phát triển bền vững, thương hiệu tiếp cận đúng khách hàng và nội dung tạo ra giá trị thực.",
+      "Meli Network bắt đầu từ một đội ngũ vận hành kênh nội dung, rồi lớn lên cùng chính những Creator mà chúng tôi đồng hành. Hôm nay Meli làm ba việc: phát triển Creator, triển khai chiến dịch cho thương hiệu, và chuyển nội dung thành doanh thu trên sàn.",
     body:
-      "Từ một đội ngũ vận hành kênh nội dung, Meli phát triển thành hệ sinh thái gồm MCN, Media & Marketing và Commerce, kết nối xuyên suốt từ phát triển Creator → xây dựng nội dung → triển khai chiến dịch → thúc đẩy thương mại.",
+      "Ba mảng đó được đặt cạnh nhau có chủ đích. Một Creator trong mạng lưới có thể trở thành gương mặt của một chiến dịch thương hiệu, rồi thành người bán hàng hiệu quả trong phiên livestream — vẫn với một đội ngũ theo suốt từ đầu đến cuối.",
     pillars: [
       { title: "Minh bạch", desc: "Rõ ràng trong hợp tác, doanh thu và quyền lợi. Đảm bảo các thông tin và giá trị đối với đối tác." },
       { title: "Bền vững", desc: "Ưu tiên giá trị dài hạn, xây dựng mối quan hệ hợp tác ổn định và cùng phát triển thay vì chỉ tập trung vào kết quả ngắn hạn." },
@@ -74,9 +74,9 @@ const vi = {
 
   services: {
     eyebrow: "Năng lực cốt lõi",
-    title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái toàn\u00A0diện",
+    title: "Ba mảng chuyên\u00A0sâu, làm\u00A0việc như một",
     desc:
-      "Kết nối toàn bộ chuỗi giá trị từ Creator, Content đến Commerce trong một hệ thống thống nhất. Meli đồng hành cùng thương hiệu và Creator từ phát triển nội dung, truyền thông đến thương mại — với một đầu mối quản lý xuyên suốt, tối ưu nguồn lực và hiệu quả triển khai.",
+      "Thay vì thuê ba đơn vị cho ba việc, thương hiệu và Creator chỉ làm việc với một đội ngũ. Sản xuất, phân phối và bán hàng nằm cùng một chỗ — nên ý tưởng không phải giải thích lại ba lần, và kết quả đo được từ đầu đến cuối.",
     items: [
       {
         tag: "01",
@@ -119,8 +119,8 @@ const vi = {
 
   cases: {
     eyebrow: "Dự án tiêu biểu",
-    title: "Những con\u00A0số khẳng\u00A0định năng\u00A0lực & vị\u00A0thế",
-    desc: "Khám phá các chiến dịch và dự án tiêu biểu, nơi năng lực của Meli được thể hiện qua những kết quả thực tế.",
+    title: "Kết\u00A0quả thật, chụp từ màn\u00A0hình",
+    desc: "Bốn lát cắt từ công việc thường ngày của Meli: doanh thu thực trên sàn, những kênh đội ngũ đang đồng hành, và cách nội dung của Creator dẫn tới đơn hàng cho thương hiệu.",
     metricLabel: "Kết quả",
     items: [
       {
@@ -186,14 +186,14 @@ const vi = {
   },
 
   culture: {
-    eyebrow: "Inside Meli",
-    title: "Con\u00A0người là hạ\u00A0tầng bền\u00A0vững nhất",
+    eyebrow: "Con người Meli",
+    title: "Thứ khó sao\u00A0chép nhất là đội\u00A0ngũ",
     desc:
-      "Công nghệ có thể thay đổi mỗi năm. Điều giữ Meli phát triển là đội ngũ hiểu nội dung, hiểu thị trường và hiểu cách cùng nhau tạo ra giá trị.",
+      "Công cụ thì ai cũng mua được. Thuật toán thì ai cũng phải học lại mỗi lần nền tảng đổi luật. Cái không mua được là một nhóm người hiểu nội dung, hiểu thị trường, và đã làm việc cùng nhau đủ lâu để biết phải xoay thế nào.",
     values: [
-      { title: "Làm thật, đo thật", desc: "Không báo cáo màu mè. Con số nào cũng phải truy được về nguồn." },
-      { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng câu hỏi: điều này có tốt cho Creator không?" },
-      { title: "Học nhanh hơn thuật toán", desc: "Nền tảng đổi luật liên tục — đội ngũ Meli đổi cách làm còn nhanh hơn." },
+      { title: "Làm thật, đo thật", desc: "Không báo cáo màu mè. Mỗi con số đưa ra đều truy được về nguồn." },
+      { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng một câu hỏi: điều này có tốt cho Creator không?" },
+      { title: "Thử trước, bàn sau", desc: "Nền tảng đổi luật liên tục. Đội ngũ Meli chọn thử ngay trên kênh thật thay vì ngồi chờ hướng dẫn." },
     ],
     invite: {
       title: "Mọi hợp\u00A0tác đều bắt\u00A0đầu từ một cuộc trò\u00A0chuyện",
@@ -248,8 +248,7 @@ const vi = {
     colTitleContact: "Liên hệ",
     services: ["Meli Creator Network", "Meli Media", "Meli Commerce"],
     socialTitle: "Theo dõi Meli",
-    // ⚠️ CẦN SỬA: thay "#" bằng địa chỉ trang Facebook thật của Meli.
-    socials: [{ name: "Facebook", href: "#" }],
+    socials: [{ name: "Facebook", href: "https://www.facebook.com/MeliChannell" }],
     legal: "Bản quyền thuộc về Meli Network.",
     company: "CÔNG TY TNHH MELI CHANNEL — MST: 0111356259",
     backToTop: "Lên đầu trang",
@@ -300,12 +299,12 @@ const en: typeof vi = {
 
   about: {
     eyebrow: "About Meli",
-    title:
-      "An ecosystem connecting Creator, Media & Commerce: from good content to real value",
+    title: "Good content deserves a good system behind it",
+    founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
     lead:
-      "Built on the belief that good content deserves a good system behind it. Meli Network connects Creator, Content and Commerce — helping creators grow sustainably, brands reach the right customers, and content turn into real value.",
+      "Meli Network started as a small team running content channels, and grew up alongside the very creators we work with. Today Meli does three things: develop creators, run campaigns for brands, and turn content into marketplace revenue.",
     body:
-      "From a team running content channels, Meli grew into an ecosystem spanning MCN, Media & Marketing and Commerce — connected end to end, from developing creators → building content → running campaigns → driving commerce.",
+      "Those three sit together on purpose. A creator in the network can become the face of a brand campaign, then a high-performing seller on a livestream — with the same team alongside them the whole way.",
     pillars: [
       { title: "Transparent", desc: "Clear on partnership terms, revenue and entitlements, so every partner knows exactly where they stand." },
       { title: "Sustainable", desc: "We prioritise long-term value and stable partnerships that grow together, rather than chasing short-term results." },
@@ -315,9 +314,9 @@ const en: typeof vi = {
 
   services: {
     eyebrow: "Core capabilities",
-    title: "Three core capabilities – one complete ecosystem",
+    title: "Three specialist arms that work as one",
     desc:
-      "Connecting the whole value chain — Creator, Content and Commerce — in one unified system. Meli works alongside brands and creators from content development through communications to commerce, with a single point of coordination that optimises both resources and execution.",
+      "Instead of hiring three agencies for three jobs, brands and creators work with a single team. Production, distribution and selling sit in one place — so an idea never has to be explained three times, and results are measurable end to end.",
     items: [
       {
         tag: "01",
@@ -360,8 +359,8 @@ const en: typeof vi = {
 
   cases: {
     eyebrow: "Selected work",
-    title: "Numbers that prove capability and standing",
-    desc: "A look at the campaigns and projects where Meli's capability shows up in real results.",
+    title: "Real results, straight off the screen",
+    desc: "Four slices of Meli's everyday work: actual marketplace revenue, the channels our team is growing, and how creator content turns into orders for a brand.",
     metricLabel: "Result",
     items: [
       {
@@ -425,14 +424,14 @@ const en: typeof vi = {
   },
 
   culture: {
-    eyebrow: "Inside Meli",
-    title: "People are the most durable infrastructure",
+    eyebrow: "The people of Meli",
+    title: "The hardest thing to copy is a team",
     desc:
-      "Technology can change every year. What keeps Meli growing is a team that understands content, understands the market, and understands how to create value together.",
+      "Anyone can buy the tools. Everyone has to relearn the algorithm each time a platform changes the rules. What you can't buy is a group of people who understand content, understand the market, and have worked together long enough to know how to adapt.",
     values: [
-      { title: "Real work, real numbers", desc: "No decorative reporting. Every figure has to trace back to a source." },
+      { title: "Real work, real numbers", desc: "No decorative reporting. Every figure we quote traces back to a source." },
       { title: "Creator at the centre", desc: "Every process starts with one question: is this good for the creator?" },
-      { title: "Learn faster than the algorithm", desc: "Platforms change the rules constantly — our team changes faster." },
+      { title: "Test first, discuss after", desc: "Platforms change the rules constantly. Our team tests on real channels rather than waiting for guidance." },
     ],
     invite: {
       title: "Every partnership starts with a conversation",
@@ -486,7 +485,7 @@ const en: typeof vi = {
     colTitleContact: "Contact",
     services: ["Meli Creator Network", "Meli Media", "Meli Commerce"],
     socialTitle: "Follow Meli",
-    socials: [{ name: "Facebook", href: "#" }],
+    socials: [{ name: "Facebook", href: "https://www.facebook.com/MeliChannell" }],
     legal: "Meli Network. All rights reserved.",
     company: "MELI CHANNEL CO., LTD — Tax ID: 0111356259",
     backToTop: "Back to top",

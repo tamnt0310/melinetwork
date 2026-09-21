@@ -16,14 +16,23 @@ export default function About() {
           {/* Hình */}
           <Reveal className="order-2 lg:order-1">
             <div className="relative">
-              <div className="card-ring relative aspect-4/3 overflow-hidden rounded-[1.75rem] bg-ink-900">
-                <MediaSlot src={images.about} alt="" seed={2} />
+              <div className="card-ring relative aspect-3/4 overflow-hidden rounded-[1.75rem] bg-ink-900">
+                <MediaSlot
+                  src={images.about}
+                  alt={`${t.about.founder.name} — ${t.about.founder.role}, Meli Network`}
+                  seed={2}
+                  sizes="(max-width: 1024px) 100vw, 520px"
+                />
+                {/* Không có thẻ tên thì người xem không biết đây là ai */}
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950 via-ink-950/75 to-transparent px-6 pb-6 pt-16">
+                  <span className="block text-base font-bold text-white">
+                    {t.about.founder.name}
+                  </span>
+                  <span className="mt-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-400">
+                    {t.about.founder.role}
+                  </span>
+                </figcaption>
               </div>
-              {/* Dải đỏ trang trí */}
-              <div
-                aria-hidden
-                className="absolute -bottom-7 -right-5 hidden sm:block h-28 w-28 rounded-[1.25rem] border border-brand-500/35 bg-gradient-to-br from-brand-500/25 to-brand-700/10 backdrop-blur-md sm:-right-8 sm:h-36 sm:w-36"
-              />
             </div>
           </Reveal>
 
