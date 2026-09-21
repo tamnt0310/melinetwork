@@ -123,35 +123,26 @@ const vi = {
     title: "Những con\u00A0số nói lên năng\u00A0lực",
     desc: "Khám phá các chiến dịch và dự án tiêu biểu, nơi năng lực của Meli được thể hiện qua những kết quả thực tế.",
     metricLabel: "Kết quả",
-    // ⚠️ MẪU — Thay bằng case study thật (tên khách hàng cần có sự đồng ý trước khi công bố)
     items: [
       {
-        client: "Thương hiệu FMCG",
-        title: "Chiến dịch ra mắt sản phẩm với 40 KOC",
-        desc: "Xây dựng làn sóng review đồng loạt trên TikTok và Facebook trong 3 tuần, kết hợp livestream chốt đơn cuối chiến dịch.",
-        tags: ["Booking KOC", "TikTok", "Livestream"],
-        metric: "18 triệu lượt tiếp cận",
+        title: "Biến sức mạnh Creator và Content thành giá trị thương mại thực",
+        desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
+        metric: "13+ tỷ GMV từ mạng lưới Creator và Commerce",
       },
       {
-        client: "Nhà sáng tạo giải trí",
-        title: "Đưa kênh từ 50K lên 1 triệu người đăng ký",
-        desc: "Tái định vị nội dung, chuẩn hoá lịch đăng và tối ưu tiêu đề — thumbnail theo dữ liệu trong 11 tháng.",
-        tags: ["MCN", "YouTube", "Chiến lược nội dung"],
-        metric: "Tăng trưởng 20 lần",
+        title: "300K+ Followers — Hàng triệu lượt yêu thích",
+        desc: "Xây dựng cộng đồng hơn 300K người theo dõi với hàng triệu lượt yêu thích trên nền tảng. Nội dung chân thật, nhất quán giúp Creator tạo kết nối và duy trì sức hút với cộng đồng.",
+        metric: "",
       },
       {
-        client: "Nhãn hàng mỹ phẩm",
-        title: "Vận hành gian hàng TikTok Shop trọn gói",
-        desc: "Thiết lập gian hàng, xây đội livestream thường trực 8 tiếng/ngày và kích hoạt mạng lưới affiliate.",
-        tags: ["E-commerce", "Livestream", "Affiliate"],
-        metric: "GMV tăng 6 lần sau 6 tháng",
+        title: "Xây dựng hệ sinh thái nội dung đa chủ đề",
+        desc: "Biến câu chuyện đời sống thành những series nội dung có sức hút và cộng đồng.",
+        metric: "",
       },
       {
-        client: "Thương hiệu công nghệ",
-        title: "Series nội dung thương hiệu dài hạn",
-        desc: "Sản xuất series 12 tập phát đa nền tảng, kết hợp hệ thống kênh nội bộ của Meli để phân phối.",
-        tags: ["Production", "Multi-platform"],
-        metric: "4.5 triệu lượt xem / tập",
+        title: "Biến sức ảnh hưởng của Creator thành giá trị cho thương hiệu",
+        desc: "Đưa sản phẩm vào nội dung một cách tự nhiên, từ trải nghiệm thực tế đến kết nối thương hiệu.",
+        metric: "",
       },
     ],
   },
@@ -207,10 +198,10 @@ const vi = {
   },
 
   contact: {
-    eyebrow: "Bắt đầu hợp tác",
-    title: "Kể cho chúng\u00A0tôi nghe về dự\u00A0án của bạn",
+    eyebrow: "Bắt đầu kết nối",
+    title: "Hãy cùng Meli tạo nên giá\u00A0trị từ nội\u00A0dung",
     desc:
-      "Dù bạn là nhà sáng tạo đang tìm một mạng lưới đồng hành, hay thương hiệu cần một đội ngũ triển khai — hãy để lại thông tin, Meli sẽ phản hồi trong vòng 24 giờ làm việc.",
+      "Bạn là thương hiệu cần triển khai một chiến dịch, Creator đang tìm kiếm một hệ sinh thái đồng hành, hay đối tác muốn cùng phát triển? Hãy để lại thông tin, đội ngũ Meli sẽ kết nối với bạn.",
     form: {
       name: "Họ và tên",
       namePh: "Nguyễn Văn A",
@@ -234,11 +225,14 @@ const vi = {
       required: "Vui lòng điền đầy đủ họ tên, email và nội dung.",
       privacy: "Thông tin của bạn chỉ được dùng để liên hệ về yêu cầu này.",
     },
-    // ⚠️ MẪU — thay bằng thông tin liên hệ thật
     info: [
-      { label: "Văn phòng", value: "Tầng X, Toà nhà Y, Quận Z, TP. Hà Nội" },
+      {
+        label: "Văn phòng",
+        value: "Khu nhà vườn 02, khu 12 ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hà Nội",
+      },
       { label: "Email", value: "contact@melinetwork.vn", href: "mailto:contact@melinetwork.vn" },
-      { label: "Hotline", value: "1900 xxxx", href: "tel:1900xxxx" },
+      // Hiển thị dạng nội địa, link bấm gọi dùng dạng quốc tế để gọi được từ nước ngoài
+      { label: "Điện thoại", value: "0559 476 329", href: "tel:+84559476329" },
     ],
   },
 
@@ -372,32 +366,24 @@ const en: typeof vi = {
     metricLabel: "Result",
     items: [
       {
-        client: "FMCG brand",
-        title: "Product launch powered by 40 KOCs",
-        desc: "A coordinated review wave across TikTok and Facebook over three weeks, closed out with a conversion livestream.",
-        tags: ["KOC booking", "TikTok", "Live commerce"],
-        metric: "18M people reached",
+        title: "Turning creator and content strength into real commercial value",
+        desc: "From content development through to conversion, Meli builds a value chain you can actually measure.",
+        metric: "13B+ VND GMV across the creator network and commerce",
       },
       {
-        client: "Entertainment creator",
-        title: "From 50K to 1 million subscribers",
-        desc: "Repositioned the content, standardised the publishing rhythm and optimised titles and thumbnails against data over 11 months.",
-        tags: ["MCN", "YouTube", "Content strategy"],
-        metric: "20× growth",
+        title: "300K+ followers — millions of likes",
+        desc: "Building a community of over 300,000 followers with millions of likes across platforms. Honest, consistent content helps creators connect and hold their audience's attention.",
+        metric: "",
       },
       {
-        client: "Cosmetics label",
-        title: "End-to-end TikTok Shop operations",
-        desc: "Set up the storefront, staffed a permanent eight-hour daily live team and activated the affiliate network.",
-        tags: ["E-commerce", "Live selling", "Affiliate"],
-        metric: "6× GMV in six months",
+        title: "Building a multi-topic content ecosystem",
+        desc: "Turning everyday stories into content series that draw an audience and build a community.",
+        metric: "",
       },
       {
-        client: "Technology brand",
-        title: "A long-running branded content series",
-        desc: "Produced a 12-episode series distributed across platforms, amplified through Meli's own channel network.",
-        tags: ["Production", "Multi-platform"],
-        metric: "4.5M views per episode",
+        title: "Turning creator influence into brand value",
+        desc: "Weaving products into content naturally — from genuine experience through to brand connection.",
+        metric: "",
       },
     ],
   },
@@ -450,10 +436,10 @@ const en: typeof vi = {
   },
 
   contact: {
-    eyebrow: "Start a partnership",
-    title: "Tell us about your project",
+    eyebrow: "Start the conversation",
+    title: "Let's create value from content, together",
     desc:
-      "Whether you're a creator looking for a network to grow with, or a brand that needs a team to execute — leave your details and Meli will respond within one business day.",
+      "A brand with a campaign to run, a creator looking for an ecosystem to grow with, or a partner who wants to build together? Leave your details and the Meli team will get in touch.",
     form: {
       name: "Full name",
       namePh: "Jane Nguyen",
@@ -478,9 +464,12 @@ const en: typeof vi = {
       privacy: "Your details are only used to respond to this enquiry.",
     },
     info: [
-      { label: "Office", value: "Floor X, Building Y, District Z, Hanoi, Vietnam" },
+      {
+        label: "Office",
+        value: "Khu nhà vườn 02, khu 12, ngõ 13 Lĩnh Nam, Vĩnh Tuy, Hanoi, Vietnam",
+      },
       { label: "Email", value: "contact@melinetwork.vn", href: "mailto:contact@melinetwork.vn" },
-      { label: "Hotline", value: "1900 xxxx", href: "tel:1900xxxx" },
+      { label: "Phone", value: "+84 559 476 329", href: "tel:+84559476329" },
     ],
   },
 

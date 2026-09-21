@@ -12,5 +12,7 @@ export const images = {
   about: "",       // 1200 × 900  (ngang 4:3) — ảnh văn phòng hoặc buổi họp nội dung
   culture: "",     //  900 × 1100 (dọc)       — ảnh đội ngũ Meli
   cultureAlt: "",  //  900 × 700  (ngang)     — ảnh hoạt động nội bộ / team building
-  cases: ["", "", "", ""], // 900 × 640 mỗi ảnh — ảnh đại diện từng dự án
+  // Bảng ghi rõ ảnh "số liệu minh chứng" kích thước 596 × 372 px — khớp đúng
+  // khung 16:10 của thẻ dự án, nên thả vào là vừa khít, không bị cắt.
+  cases: ["", "", "", ""], // 596 × 372 mỗi ảnh (ẢNH 1 → ẢNH 4 theo thứ tự trong bảng)
 } as const;
