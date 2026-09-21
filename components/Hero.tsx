@@ -3,7 +3,6 @@
 import { useLang } from "@/lib/lang";
 import { images } from "@/lib/images";
 import MediaSlot from "./MediaSlot";
-import { LogoMark } from "./Logo";
 
 export default function Hero() {
   const { t } = useLang();
@@ -60,18 +59,9 @@ export default function Hero() {
         </div>
 
         {/* Cột hình */}
-        <div className="relative lg:col-span-5">
+        <div className="lg:col-span-5">
           <div className="card-ring relative aspect-4/5 overflow-hidden rounded-[2rem] bg-ink-900 shadow-[0_40px_90px_-40px_rgba(0,0,0,1)]">
             <MediaSlot src={images.hero} alt="Meli Network" seed={1} />
-          </div>
-
-          {/* Thẻ nổi */}
-          <div className="card-ring absolute -bottom-6 -left-4 flex items-center gap-3 rounded-2xl bg-ink-850/90 px-4 py-3.5 backdrop-blur-xl sm:-left-8 sm:px-5">
-            <LogoMark className="h-8 w-8 shrink-0" />
-            <div className="leading-tight">
-              <div className="text-sm font-bold text-white">{t.hero.badge.value}</div>
-              <div className="mt-0.5 max-w-[11rem] text-[11px] text-muted">{t.hero.badge.label}</div>
-            </div>
           </div>
         </div>
       </div>

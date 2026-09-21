@@ -44,8 +44,6 @@ const vi = {
     ctaPrimary: "Hợp tác cùng Meli",
     ctaSecondary: "Khám phá hệ sinh thái",
     scroll: "Cuộn xuống",
-    // Nhãn nổi trên ảnh hero
-    badge: { value: "Since 2019", label: "Đồng hành cùng nhà sáng tạo Việt" }, // ⚠️ MẪU — sửa năm thành lập
   },
 
   // ⚠️ MẪU — TOÀN BỘ SỐ LIỆU DƯỚI ĐÂY LÀ GIẢ ĐỊNH. Thay bằng số thật.
@@ -298,7 +296,6 @@ const en: typeof vi = {
     ctaPrimary: "Partner with Meli",
     ctaSecondary: "Explore the ecosystem",
     scroll: "Scroll",
-    badge: { value: "Since 2019", label: "Standing beside Vietnamese creators" },
   },
 
   stats: {
