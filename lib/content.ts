@@ -248,7 +248,7 @@ const vi = {
   },
 
   footer: {
-    tagline: "Hệ sinh thái sáng tạo nội dung & thương mại số.",
+    tagline: "Hệ sinh thái sáng tạo nội dung & thương\u00A0mại\u00A0số.",
     colTitleNav: "Khám phá",
     colTitleServices: "Dịch vụ",
     colTitleContact: "Liên hệ",
@@ -490,7 +490,7 @@ const en: typeof vi = {
   },
 
   footer: {
-    tagline: "A creative content and digital commerce ecosystem.",
+    tagline: "A creative content and digital\u00A0commerce\u00A0ecosystem.",
     colTitleNav: "Explore",
     colTitleServices: "Services",
     colTitleContact: "Contact",

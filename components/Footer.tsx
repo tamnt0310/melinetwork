@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Thương hiệu */}
           <div className="lg:col-span-4">
             <LogoLockup />
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">{t.footer.tagline}</p>
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">{t.footer.tagline}</p>
 
             <div className="mt-7">
               <h3 className="text-[11px] font-bold uppercase tracking-[0.18em] text-faint">
