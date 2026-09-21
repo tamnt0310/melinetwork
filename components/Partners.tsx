@@ -6,6 +6,15 @@ import { useLang } from "@/lib/lang";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
+/** Lấy chữ cái đầu cho vòng tròn đại diện, bỏ qua kính ngữ tiếng Việt —
+ *  "Anh N** Nguyễn" phải ra "N" chứ không phải "A". */
+function initial(name: string) {
+  const honorifics = ["anh", "chị", "chi", "ông", "ong", "bà", "ba", "cô", "co", "mr", "mrs", "ms"];
+  const parts = name.trim().split(/\s+/);
+  const first = parts.find((w) => !honorifics.includes(w.toLowerCase().replace(/[.,]/g, "")));
+  return (first ?? parts[0] ?? "").slice(0, 1).toUpperCase();
+}
+
 export default function Partners() {
   const { t } = useLang();
   // Nhân đôi danh sách để dải logo chạy liền mạch
@@ -79,7 +88,7 @@ export default function Partners() {
                 {item.name ? (
                   <figcaption className="relative mt-6 flex items-center gap-3 border-t border-line/70 pt-5">
                     <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-500/15 text-xs font-bold text-brand-400">
-                      {item.name.trim().slice(0, 1)}
+                      {initial(item.name)}
                     </span>
                     <span className="leading-tight">
                       <span className="block text-sm font-bold text-white">{item.name}</span>

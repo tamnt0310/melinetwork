@@ -168,20 +168,20 @@ const vi = {
       {
         quote:
           "Meli hỗ trợ rất sát từ việc phát triển nội dung, vận hành kênh đến các cơ hội hợp tác. Mình cảm thấy có một team thực sự đồng hành phía sau.",
-        name: "",
-        role: "",
+        name: "Th* H*",
+        role: "Creator",
       },
       {
         quote:
           "Điều mình đánh giá cao ở Meli là cách làm việc rõ ràng và chuyên nghiệp. Các vấn đề về doanh thu, hợp tác hay bản quyền đều được team hỗ trợ khá nhanh.",
-        name: "",
-        role: "",
+        name: "Anh N** Nguyễn",
+        role: "Đại diện Brand M*** M***",
       },
       {
         quote:
           "Meli hiểu khá rõ cách kết nối thương hiệu với Creator phù hợp. Team chủ động, linh hoạt và bám sát mục tiêu của chiến dịch.",
-        name: "",
-        role: "",
+        name: "Chị H* Ph****",
+        role: "Đại diện T**T**",
       },
     ],
   },
@@ -411,20 +411,20 @@ const en: typeof vi = {
       {
         quote:
           "Meli supports us closely — content development, channel operations, partnership opportunities. It genuinely feels like having a team behind you.",
-        name: "",
-        role: "",
+        name: "Th* H*",
+        role: "Creator",
       },
       {
         quote:
           "What I value about Meli is how clear and professional they are. Questions about revenue, partnerships or rights get handled quickly.",
-        name: "",
-        role: "",
+        name: "Mr N** Nguyen",
+        role: "Brand representative, M*** M***",
       },
       {
         quote:
           "Meli understands how to match a brand with the right creator. The team is proactive, flexible and stays close to the campaign's goals.",
-        name: "",
-        role: "",
+        name: "Ms H* Ph****",
+        role: "Brand representative, T**T**",
       },
     ],
   },
