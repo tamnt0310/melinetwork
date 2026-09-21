@@ -35,8 +35,20 @@ export default function About() {
                   {t.about.lead}
                 </p>
               </Reveal>
-              <Reveal delay={200}>
-                <p className="mt-5 text-base leading-relaxed text-muted">{t.about.body}</p>
+              {t.about.body.map((paragraph, i) => (
+                <Reveal key={paragraph} delay={200 + i * 60}>
+                  <p className="mt-5 text-base leading-relaxed text-muted">{paragraph}</p>
+                </Reveal>
+              ))}
+
+              <Reveal delay={340}>
+                <p className="mt-7 border-l-2 border-brand-500 pl-5 text-base font-semibold leading-relaxed text-white sm:text-lg">
+                  {t.about.closing.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </p>
               </Reveal>
             </SectionHeading>
 

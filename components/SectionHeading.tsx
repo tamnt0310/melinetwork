@@ -10,7 +10,7 @@ export default function SectionHeading({
 }: {
   eyebrow: string;
   title: ReactNode;
-  desc?: string;
+  desc?: string | string[];
   align?: "left" | "center";
   children?: ReactNode;
 }) {
@@ -35,11 +35,12 @@ export default function SectionHeading({
         </h2>
       </Reveal>
 
-      {desc && (
-        <Reveal delay={140}>
-          <p className="mt-5 text-pretty text-base leading-relaxed text-muted">{desc}</p>
-        </Reveal>
-      )}
+      {desc &&
+        (Array.isArray(desc) ? desc : [desc]).map((paragraph, i) => (
+          <Reveal key={paragraph} delay={140 + i * 60}>
+            <p className="mt-5 text-pretty text-base leading-relaxed text-muted">{paragraph}</p>
+          </Reveal>
+        ))}
 
       {children}
     </div>

@@ -58,12 +58,16 @@ const vi = {
   },
 
   about: {
-    eyebrow: "Đôi nét về Meli",
-    title: "Nội\u00A0dung tốt xứng\u00A0đáng có một hệ\u00A0thống tốt phía\u00A0sau",
+    eyebrow: "Hệ sinh thái kết nối Creator, Media & Commerce",
+    title: "Từ nội\u00A0dung tốt đến giá\u00A0trị thực",
     lead:
-      "Meli Network bắt đầu từ một đội ngũ vận hành kênh nội dung, rồi lớn lên cùng chính những Creator mà chúng tôi đồng hành. Hôm nay Meli làm ba việc: phát triển Creator, triển khai chiến dịch cho thương hiệu, và chuyển nội dung thành doanh thu trên sàn.",
-    body:
-      "Ba mảng đó được đặt cạnh nhau có chủ đích. Một Creator trong mạng lưới có thể trở thành gương mặt của một chiến dịch thương hiệu, rồi thành người bán hàng hiệu quả trong phiên livestream — vẫn với một đội ngũ theo suốt từ đầu đến cuối.",
+      "Tại Meli Network, chúng tôi tin rằng một nội dung tốt không chỉ dừng lại ở lượt xem. Giá trị của nội dung được tạo ra khi phía sau nó có một hệ thống đủ năng lực để nuôi dưỡng con người, phát triển nội dung, kết nối thương hiệu và tạo ra kết quả thực tế.",
+    body: [
+      "Khởi đầu từ đội ngũ vận hành các kênh truyền thông, Meli Network từng bước phát triển thành một hệ sinh thái kết nối Creator – Media – Commerce, nơi các nguồn lực được liên kết xuyên suốt để cùng tạo ra giá trị.",
+      "Từ việc phát triển và đồng hành cùng Creator, xây dựng nội dung có sức ảnh hưởng, triển khai các hoạt động Media & Marketing, đến đưa nội dung trực tiếp đến điểm chuyển đổi thương mại — Meli kết nối các mắt xích trong cùng một hệ thống.",
+    ],
+    // Câu chốt, hiển thị nổi bật với vạch đỏ bên trái
+    closing: ["Chúng tôi không chỉ tạo ra nội dung.", "Chúng tôi xây dựng hệ thống để nội dung tạo ra giá trị."],
     pillars: [
       { title: "Minh bạch", desc: "Rõ ràng trong hợp tác, doanh thu và quyền lợi. Đảm bảo các thông tin và giá trị đối với đối tác." },
       { title: "Bền vững", desc: "Ưu tiên giá trị dài hạn, xây dựng mối quan hệ hợp tác ổn định và cùng phát triển thay vì chỉ tập trung vào kết quả ngắn hạn." },
@@ -73,9 +77,12 @@ const vi = {
 
   services: {
     eyebrow: "Năng lực cốt lõi",
-    title: "Ba mảng chuyên\u00A0sâu, làm\u00A0việc như một",
-    desc:
-      "Thay vì thuê ba đơn vị cho ba việc, thương hiệu và Creator chỉ làm việc với một đội ngũ. Sản xuất, phân phối và bán hàng nằm cùng một chỗ — nên ý tưởng không phải giải thích lại ba lần, và kết quả đo được từ đầu đến cuối.",
+    title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái toàn\u00A0diện",
+    desc: [
+      "Từ sáng tạo nội dung đến thương mại số, Meli Network kết nối ba năng lực cốt lõi trong một hệ sinh thái thống nhất: Creator – Media & Marketing – Commerce.",
+      "Thay vì vận hành từng hoạt động riêng lẻ, Meli đóng vai trò là “đầu mối kết nối xuyên suốt”, giúp Creator và Thương hiệu tiếp cận đúng nguồn lực, đơn giản hóa quá trình triển khai và nâng cao hiệu quả vận hành.",
+      "Mỗi nội dung được tạo ra không chỉ để thu hút sự chú ý, mà hướng đến một giá trị lớn hơn: xây dựng thương hiệu, tạo kết nối và chuyển hóa thành kết quả thực tế.",
+    ],
     items: [
       {
         tag: "01",
@@ -118,36 +125,31 @@ const vi = {
 
   cases: {
     eyebrow: "Dự án tiêu biểu",
-    title: "Kết\u00A0quả thật, chụp từ màn\u00A0hình",
-    desc: "Bốn lát cắt từ công việc thường ngày của Meli: doanh thu thực trên sàn, những kênh đội ngũ đang đồng hành, và cách nội dung của Creator dẫn tới đơn hàng cho thương hiệu.",
-    metricLabel: "Kết quả",
+    title: "Những con\u00A0số trên hành\u00A0trình phát\u00A0triển",
+    desc: "Những con số dưới đây phản ánh một phần quy mô hoạt động và những kết quả Meli đã ghi nhận trong quá trình đồng hành cùng Creator và Thương hiệu.",
     items: [
       {
         title: "Biến sức mạnh Creator và Content thành giá trị thương mại thực",
         desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
-        metric: "13+ tỷ GMV từ mạng lưới Creator và Commerce",
       },
       {
         title: "300K+ Followers — Hàng triệu lượt yêu thích",
         desc: "Nội dung chân thật, nhất quán giúp Creator xây được kết nối lâu dài và giữ sức hút với cộng đồng của mình.",
-        metric: "",
       },
       {
         title: "Xây dựng hệ sinh thái nội dung đa chủ đề",
         desc: "Biến câu chuyện đời sống thành những series nội dung có sức hút và cộng đồng.",
-        metric: "",
       },
       {
         title: "Biến sức ảnh hưởng của Creator thành giá trị cho thương hiệu",
         desc: "Đưa sản phẩm vào nội dung một cách tự nhiên, từ trải nghiệm thực tế đến kết nối thương hiệu.",
-        metric: "",
       },
     ],
   },
 
   partners: {
     eyebrow: "Niềm tin từ đối tác",
-    title: "Niềm\u00A0tin từ những thương\u00A0hiệu & nền\u00A0tảng hàng\u00A0đầu",
+    title: "Đồng\u00A0hành cùng Thương\u00A0hiệu & Nền\u00A0tảng",
     desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, Marketing và Commerce.",
     logos: [
       { name: "Converse", src: "/logos/converse.png" },
@@ -187,19 +189,23 @@ const vi = {
   culture: {
     eyebrow: "Con người Meli",
     founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
-    title: "Thứ khó sao\u00A0chép nhất là đội\u00A0ngũ",
-    desc:
-      "Công cụ thì ai cũng mua được. Thuật toán thì ai cũng phải học lại mỗi lần nền tảng đổi luật. Cái không mua được là một nhóm người hiểu nội dung, hiểu thị trường, và đã làm việc cùng nhau đủ lâu để biết phải xoay thế nào.",
-    values: [
-      { title: "Làm thật, đo thật", desc: "Không báo cáo màu mè. Mỗi con số đưa ra đều truy được về nguồn." },
-      { title: "Creator là trung tâm", desc: "Mọi quy trình đều bắt đầu bằng một câu hỏi: điều này có tốt cho Creator không?" },
-      { title: "Thử trước, bàn sau", desc: "Nền tảng đổi luật liên tục. Đội ngũ Meli chọn thử ngay trên kênh thật thay vì ngồi chờ hướng dẫn." },
+    title: "Con\u00A0người là hạ\u00A0tầng bền\u00A0vững nhất",
+    lead:
+      "Công nghệ có thể thay đổi. Thuật toán có thể thay đổi. Thị trường cũng có thể thay đổi mỗi ngày. Nhưng điều Meli lựa chọn giữ lại là con người, chữ Tín và cách chúng ta đối xử với nhau.",
+    body:
+      "Tại Meli Network, chúng tôi tin rằng một đội ngũ tốt không chỉ được tạo nên bởi năng lực, mà còn bởi cái Tâm, tinh thần trách nhiệm và sự tử tế trong cách làm việc.",
+    commitments: [
+      { who: "Với Creator", desc: "Chúng tôi trân trọng công sức, thời gian và niềm tin mà họ dành cho Meli." },
+      { who: "Với Thương hiệu", desc: "Chúng tôi đề cao sự minh bạch, hiệu quả và trách nhiệm với từng kết quả." },
+      { who: "Với Cộng đồng", desc: "Chúng tôi hướng đến những giá trị tích cực và bền vững, thay vì những thành quả ngắn hạn." },
     ],
-    invite: {
-      title: "Mọi hợp\u00A0tác đều bắt\u00A0đầu từ một cuộc trò\u00A0chuyện",
-      desc: "Dù bạn là Creator muốn phát triển kênh hay thương hiệu cần triển khai chiến dịch, việc đầu tiên đội ngũ Meli làm là ngồi nghe bạn kể về mục tiêu của mình — trước khi đề xuất bất cứ điều gì.",
-      cta: "Trò chuyện cùng đội ngũ Meli",
-    },
+    valuesIntro: "Ba điều Meli luôn giữ trong cách làm việc",
+    values: [
+      { title: "Làm việc có Tâm", desc: "Đặt sự tử tế và giá trị thật vào trong từng việc mình làm." },
+      { title: "Giữ chữ Tín", desc: "Trân trọng mọi cam kết và xây dựng uy tín bằng hành động." },
+      { title: "Có trách nhiệm", desc: "Không chỉ hoàn thành công việc, mà cùng chịu trách nhiệm với kết quả và những giá trị mình tạo ra." },
+    ],
+    closing: "Làm việc bằng năng lực. Đồng hành bằng cái Tâm. Giữ nhau bằng chữ Tín.",
   },
 
   contact: {
@@ -298,12 +304,15 @@ const en: typeof vi = {
   },
 
   about: {
-    eyebrow: "About Meli",
-    title: "Good content deserves a good system behind it",
+    eyebrow: "An ecosystem connecting Creator, Media & Commerce",
+    title: "From good content to real value",
     lead:
-      "Meli Network started as a small team running content channels, and grew up alongside the very creators we work with. Today Meli does three things: develop creators, run campaigns for brands, and turn content into marketplace revenue.",
-    body:
-      "Those three sit together on purpose. A creator in the network can become the face of a brand campaign, then a high-performing seller on a livestream — with the same team alongside them the whole way.",
+      "At Meli Network we believe good content doesn't stop at view counts. Its value appears when there is a capable system behind it — one that nurtures people, develops content, connects brands and produces real outcomes.",
+    body: [
+      "Starting from a team that ran media channels, Meli Network grew step by step into an ecosystem connecting Creator – Media – Commerce, where resources are linked end to end to create value together.",
+      "From developing and standing beside creators, building content with real influence, and running media and marketing activity, through to bringing content directly to the point of commercial conversion — Meli connects every link in a single system.",
+    ],
+    closing: ["We don't just make content.", "We build the system that turns content into value."],
     pillars: [
       { title: "Transparent", desc: "Clear on partnership terms, revenue and entitlements, so every partner knows exactly where they stand." },
       { title: "Sustainable", desc: "We prioritise long-term value and stable partnerships that grow together, rather than chasing short-term results." },
@@ -313,9 +322,12 @@ const en: typeof vi = {
 
   services: {
     eyebrow: "Core capabilities",
-    title: "Three specialist arms that work as one",
-    desc:
-      "Instead of hiring three agencies for three jobs, brands and creators work with a single team. Production, distribution and selling sit in one place — so an idea never has to be explained three times, and results are measurable end to end.",
+    title: "Three core capabilities – one complete ecosystem",
+    desc: [
+      "From content creation to digital commerce, Meli Network connects three core capabilities in one unified ecosystem: Creator – Media & Marketing – Commerce.",
+      "Rather than running each activity in isolation, Meli acts as the single connecting point, helping creators and brands reach the right resources, simplifying execution and improving operational effectiveness.",
+      "Every piece of content is made to do more than attract attention — it is built toward something larger: building the brand, creating connection, and converting into real results.",
+    ],
     items: [
       {
         tag: "01",
@@ -358,36 +370,31 @@ const en: typeof vi = {
 
   cases: {
     eyebrow: "Selected work",
-    title: "Real results, straight off the screen",
-    desc: "Four slices of Meli's everyday work: actual marketplace revenue, the channels our team is growing, and how creator content turns into orders for a brand.",
-    metricLabel: "Result",
+    title: "Numbers from the journey so far",
+    desc: "The figures below reflect part of the scale we operate at and the results Meli has recorded while working alongside creators and brands.",
     items: [
       {
         title: "Turning creator and content strength into real commercial value",
         desc: "From content development through to conversion, Meli builds a value chain you can actually measure.",
-        metric: "13B+ VND GMV across the creator network and commerce",
       },
       {
         title: "300K+ followers — millions of likes",
         desc: "Honest, consistent content helps creators build lasting connections and hold their community's attention.",
-        metric: "",
       },
       {
         title: "Building a multi-topic content ecosystem",
         desc: "Turning everyday stories into content series that draw an audience and build a community.",
-        metric: "",
       },
       {
         title: "Turning creator influence into brand value",
         desc: "Weaving products into content naturally — from genuine experience through to brand connection.",
-        metric: "",
       },
     ],
   },
 
   partners: {
     eyebrow: "Trusted by partners",
-    title: "Trust from the leading brands and platforms",
+    title: "Working alongside brands and platforms",
     desc: "Meli Network partners with major platforms and works alongside many brands across Creator, Marketing and Commerce.",
     logos: [
       { name: "Converse", src: "/logos/converse.png" },
@@ -425,19 +432,23 @@ const en: typeof vi = {
   culture: {
     eyebrow: "The people of Meli",
     founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
-    title: "The hardest thing to copy is a team",
-    desc:
-      "Anyone can buy the tools. Everyone has to relearn the algorithm each time a platform changes the rules. What you can't buy is a group of people who understand content, understand the market, and have worked together long enough to know how to adapt.",
-    values: [
-      { title: "Real work, real numbers", desc: "No decorative reporting. Every figure we quote traces back to a source." },
-      { title: "Creator at the centre", desc: "Every process starts with one question: is this good for the creator?" },
-      { title: "Test first, discuss after", desc: "Platforms change the rules constantly. Our team tests on real channels rather than waiting for guidance." },
+    title: "People are the most durable infrastructure",
+    lead:
+      "Technology changes. Algorithms change. The market can change by the day. What Meli chooses to hold on to is people, our word, and the way we treat one another.",
+    body:
+      "At Meli Network we believe a good team is built not only on capability, but on heart, a sense of responsibility, and decency in how the work gets done.",
+    commitments: [
+      { who: "With creators", desc: "We respect the effort, the time and the trust they place in Meli." },
+      { who: "With brands", desc: "We hold ourselves to transparency, effectiveness and accountability for every result." },
+      { who: "With the community", desc: "We aim for positive, lasting value rather than short-term wins." },
     ],
-    invite: {
-      title: "Every partnership starts with a conversation",
-      desc: "Whether you're a creator looking to grow a channel or a brand with a campaign to run, the first thing our team does is listen to your goals — before proposing anything at all.",
-      cta: "Talk to the Meli team",
-    },
+    valuesIntro: "Three things Meli always holds to",
+    values: [
+      { title: "Work with heart", desc: "Put decency and real value into every piece of work we do." },
+      { title: "Keep our word", desc: "Honour every commitment and build trust through action." },
+      { title: "Take responsibility", desc: "Not just finish the job, but share responsibility for the results and the value we create." },
+    ],
+    closing: "Working through capability. Partnering with heart. Holding together by our word.",
   },
 
   contact: {

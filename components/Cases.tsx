@@ -29,16 +29,6 @@ export default function Cases() {
                     {c.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{c.desc}</p>
-
-                  {/* Chỉ hiện dòng kết quả khi dự án có số liệu kèm theo */}
-                  {c.metric && (
-                    <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line/70 pt-5">
-                      <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-faint">
-                        {t.cases.metricLabel}
-                      </span>
-                      <span className="text-sm font-bold text-brand-400">{c.metric}</span>
-                    </div>
-                  )}
                 </div>
               </article>
             </Reveal>
