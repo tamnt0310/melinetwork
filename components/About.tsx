@@ -19,7 +19,7 @@ export default function About() {
               <div className="card-ring relative aspect-4/3 overflow-hidden rounded-[1.75rem] bg-ink-900">
                 <MediaSlot
                   src={images.about}
-                  alt="Đội ngũ Meli Network trong một chương trình cộng đồng"
+                  alt="Sơ đồ hệ sinh thái Meli Network: Nhà sáng tạo, Truyền thông, Chiến dịch và Thương mại kết nối quanh một đầu mối"
                   seed={2}
                   sizes="(max-width: 1024px) 100vw, 560px"
                 />

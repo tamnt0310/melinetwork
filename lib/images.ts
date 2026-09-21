@@ -9,9 +9,7 @@
 
 export const images = {
   hero: "/images/hero.jpg",                          // 1000 × 1000 (vuông) — góc studio sản xuất
-  // ⚠️ CẦN THAY: sơ đồ hệ sinh thái Meli. Chưa nhận được file nên tạm để
-  //    trống — website tự vẽ hình trừu tượng thay thế cho tới khi có ảnh.
-  about: "",                                         // 1400 × 1050 (ngang 4:3) — sơ đồ hệ sinh thái
+  about: "/images/so-do-he-sinh-thai.jpg",           //  903 × 677 (ngang 4:3) — sơ đồ hệ sinh thái
   team: "/images/doi-ngu-meli.jpg",                  // 1413 × 795 (ngang 16:9) — đội ngũ & cộng đồng
   culture: "/images/founder-nguyen-thanh-tam.jpg",   //  914 × 1218 (dọc 3:4) — chân dung Founder
   // Bảng ghi rõ ảnh "số liệu minh chứng" kích thước 596 × 372 px — khớp đúng
