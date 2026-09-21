@@ -38,17 +38,29 @@ function StatItem({
   suffix,
   label,
   run,
+  singleRow,
 }: {
   value: string;
   suffix: string;
   label: string;
   run: boolean;
+  /** true khi tất cả ô nằm gọn trên một hàng ở mọi kích thước màn hình */
+  singleRow: boolean;
 }) {
   const decimals = value.includes(".") ? value.split(".")[1].length : 0;
   const current = useCountUp(Number(value), decimals, run);
 
   return (
-    <div className="relative border-b border-l border-line/50 px-2 py-8 text-center [&:nth-child(2n+1)]:border-l-0 [&:nth-child(n+3)]:border-b-0 sm:px-6 lg:border-b-0 lg:[&:nth-child(2n+1)]:border-l lg:[&:nth-child(4n+1)]:border-l-0">
+    <div
+      className={
+        "relative border-line/50 px-2 py-8 text-center sm:px-6 " +
+        (singleRow
+          ? // Một hàng: chỉ cần vạch ngăn giữa các ô
+            "border-l [&:first-child]:border-l-0"
+          : // Hai hàng trên mobile, một hàng từ lg: phải bỏ vạch đúng chỗ
+            "border-b border-l [&:nth-child(2n+1)]:border-l-0 [&:nth-child(n+3)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n+1)]:border-l lg:[&:nth-child(4n+1)]:border-l-0")
+      }
+    >
       <div className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
         {current.toFixed(decimals)}
         <span className="text-brand-500">{suffix}</span>
@@ -57,6 +69,15 @@ function StatItem({
     </div>
   );
 }
+
+/** Bố cục lưới theo số ô. Viết sẵn từng chuỗi vì Tailwind quét class ở dạng
+ *  văn bản tĩnh — ghép chuỗi kiểu `grid-cols-${n}` sẽ không sinh ra CSS. */
+const GRID: Record<number, string> = {
+  1: "grid grid-cols-1",
+  2: "grid grid-cols-2",
+  3: "grid grid-cols-3",
+  4: "grid grid-cols-2 lg:grid-cols-4",
+};
 
 export default function Stats() {
   const { t } = useLang();
@@ -82,9 +103,9 @@ export default function Stats() {
   return (
     <section className="relative border-y border-line/60 bg-ink-900/40">
       <div ref={ref} className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4">
+        <div className={GRID[Math.min(t.stats.items.length, 4)] ?? GRID[4]}>
           {t.stats.items.map((s) => (
-            <StatItem key={s.label} {...s} run={run} />
+            <StatItem key={s.label} {...s} run={run} singleRow={t.stats.items.length <= 3} />
           ))}
         </div>
         <p className="pb-6 text-center text-[11px] uppercase tracking-[0.18em] text-faint">

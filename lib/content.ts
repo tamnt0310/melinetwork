@@ -50,18 +50,19 @@ const vi = {
 
   // ⚠️ MẪU — TOÀN BỘ SỐ LIỆU DƯỚI ĐÂY LÀ GIẢ ĐỊNH. Thay bằng số thật.
   stats: {
-    note: "Số liệu cập nhật quý gần nhất", // ⚠️ MẪU
+    note: "Số liệu tổng hợp từ hoạt động của mạng lưới",
+    // Chỉ liệt kê con số đã được xác nhận. Muốn thêm ô mới, chèn vào mảng này —
+    // bố cục tự giãn theo số lượng (xem components/Stats.tsx).
     items: [
-      { value: "250", suffix: "+", label: "Kênh & nhà sáng tạo đồng hành" },
-      { value: "1.2", suffix: " tỷ", label: "Lượt xem mỗi tháng" },
-      { value: "180", suffix: "+", label: "Chiến dịch thương hiệu đã triển khai" },
-      { value: "6", suffix: "", label: "Nền tảng vận hành song song" },
+      { value: "13", suffix: "+ tỷ", label: "GMV từ mạng lưới Creator và Commerce" },
+      { value: "300", suffix: "K+", label: "Người theo dõi, hàng triệu lượt yêu thích" },
     ],
   },
 
   about: {
     eyebrow: "Đôi nét về Meli",
-    title: "Một hệ sinh\u00A0thái ba năng\u00A0lực, cùng một mục\u00A0tiêu",
+    title:
+      "Hệ sinh\u00A0thái kết\u00A0nối Creator, Media & Commerce: từ nội\u00A0dung tốt đến giá\u00A0trị thực",
     lead:
       "Được xây dựng trên niềm tin rằng nội dung tốt xứng đáng có một hệ thống tốt phía sau. Meli Network xây dựng hệ sinh thái kết nối Creator, Content và Commerce — giúp nhà sáng tạo phát triển bền vững, thương hiệu tiếp cận đúng khách hàng và nội dung tạo ra giá trị thực.",
     body:
@@ -75,7 +76,7 @@ const vi = {
 
   services: {
     eyebrow: "Năng lực cốt lõi",
-    title: "Ba năng\u00A0lực, một hệ sinh\u00A0thái",
+    title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái toàn\u00A0diện",
     desc:
       "Kết nối toàn bộ chuỗi giá trị từ Creator, Content đến Commerce trong một hệ thống thống nhất. Meli đồng hành cùng thương hiệu và nhà sáng tạo từ phát triển nội dung, truyền thông đến thương mại — với một đầu mối quản lý xuyên suốt, tối ưu nguồn lực và hiệu quả triển khai.",
     items: [
@@ -120,7 +121,7 @@ const vi = {
 
   cases: {
     eyebrow: "Dự án tiêu biểu",
-    title: "Những con\u00A0số nói lên năng\u00A0lực",
+    title: "Những con\u00A0số khẳng\u00A0định năng\u00A0lực & vị\u00A0thế",
     desc: "Khám phá các chiến dịch và dự án tiêu biểu, nơi năng lực của Meli được thể hiện qua những kết quả thực tế.",
     metricLabel: "Kết quả",
     items: [
@@ -149,7 +150,7 @@ const vi = {
 
   partners: {
     eyebrow: "Niềm tin từ đối tác",
-    title: "Được tin\u00A0tưởng bởi các thương\u00A0hiệu và nền\u00A0tảng",
+    title: "Niềm\u00A0tin từ những thương\u00A0hiệu & nền\u00A0tảng hàng\u00A0đầu",
     desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, Marketing và Commerce.",
     // ⚠️ MẪU — thay bằng logo thật (xem hướng dẫn trong README)
     logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
@@ -180,7 +181,7 @@ const vi = {
 
   culture: {
     eyebrow: "Inside Meli",
-    title: "Con\u00A0người là hạ\u00A0tầng thật\u00A0sự của chúng\u00A0tôi",
+    title: "Con\u00A0người là hạ\u00A0tầng bền\u00A0vững nhất",
     desc:
       "Công nghệ có thể thay đổi mỗi năm. Điều giữ Meli phát triển là đội ngũ hiểu nội dung, hiểu thị trường và hiểu cách cùng nhau tạo ra giá trị.",
     values: [
@@ -291,18 +292,17 @@ const en: typeof vi = {
   },
 
   stats: {
-    note: "Figures from the most recent quarter",
+    note: "Figures drawn from network activity",
     items: [
-      { value: "250", suffix: "+", label: "Channels & creators in the network" },
-      { value: "1.2", suffix: "B", label: "Monthly views generated" },
-      { value: "180", suffix: "+", label: "Brand campaigns delivered" },
-      { value: "6", suffix: "", label: "Platforms operated in parallel" },
+      { value: "13", suffix: "B+ VND", label: "GMV across the creator network and commerce" },
+      { value: "300", suffix: "K+", label: "Followers, with millions of likes" },
     ],
   },
 
   about: {
     eyebrow: "About Meli",
-    title: "One ecosystem of three capabilities, one goal",
+    title:
+      "An ecosystem connecting Creator, Media & Commerce: from good content to real value",
     lead:
       "Built on the belief that good content deserves a good system behind it. Meli Network connects Creator, Content and Commerce — helping creators grow sustainably, brands reach the right customers, and content turn into real value.",
     body:
@@ -316,7 +316,7 @@ const en: typeof vi = {
 
   services: {
     eyebrow: "Core capabilities",
-    title: "Three capabilities, one ecosystem",
+    title: "Three core capabilities – one complete ecosystem",
     desc:
       "Connecting the whole value chain — Creator, Content and Commerce — in one unified system. Meli works alongside brands and creators from content development through communications to commerce, with a single point of coordination that optimises both resources and execution.",
     items: [
@@ -361,7 +361,7 @@ const en: typeof vi = {
 
   cases: {
     eyebrow: "Selected work",
-    title: "Numbers that show what we can do",
+    title: "Numbers that prove capability and standing",
     desc: "A look at the campaigns and projects where Meli's capability shows up in real results.",
     metricLabel: "Result",
     items: [
@@ -390,7 +390,7 @@ const en: typeof vi = {
 
   partners: {
     eyebrow: "Trusted by partners",
-    title: "Trusted by leading brands and platforms",
+    title: "Trust from the leading brands and platforms",
     desc: "Meli Network partners with major platforms and works alongside many brands across Creator, Marketing and Commerce.",
     logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
     quotesTitle: "What partners and creators say",
@@ -418,7 +418,7 @@ const en: typeof vi = {
 
   culture: {
     eyebrow: "Inside Meli",
-    title: "People are our real infrastructure",
+    title: "People are the most durable infrastructure",
     desc:
       "Technology can change every year. What keeps Meli growing is a team that understands content, understands the market, and understands how to create value together.",
     values: [
