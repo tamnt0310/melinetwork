@@ -10,12 +10,21 @@ export default function Culture() {
   const { t } = useLang();
 
   return (
-    <section id="culture" className="relative scroll-mt-24 border-t border-line/60 bg-ink-900/30 py-24 sm:py-32">
+    <section
+      id="culture"
+      className="relative scroll-mt-24 border-t border-line/60 bg-ink-900/30 py-24 sm:py-32"
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
-          {/* Chữ + giá trị cốt lõi */}
+          {/* Cột trái: tiêu đề, giá trị cốt lõi, lời mời.
+              Lời mời đặt ở cuối cột này để hai cột cao gần bằng nhau —
+              chân dung bên phải vốn đã rất cao. */}
           <div>
-            <SectionHeading eyebrow={t.culture.eyebrow} title={t.culture.title} desc={t.culture.desc} />
+            <SectionHeading
+              eyebrow={t.culture.eyebrow}
+              title={t.culture.title}
+              desc={t.culture.desc}
+            />
 
             <div className="mt-10 space-y-5">
               {t.culture.values.map((v, i) => (
@@ -32,23 +41,9 @@ export default function Culture() {
                 </Reveal>
               ))}
             </div>
-          </div>
 
-          {/* Ảnh ghép + khối tuyển dụng */}
-          <div className="flex flex-col gap-6">
-            <Reveal>
-              <div className="card-ring relative aspect-video overflow-hidden rounded-[1.5rem] bg-ink-900">
-                <MediaSlot
-                  src={images.culture}
-                  alt="Đội ngũ Meli Network trong một chương trình cộng đồng"
-                  seed={5}
-                  sizes="(max-width: 1024px) 100vw, 560px"
-                />
-              </div>
-            </Reveal>
-
-            <Reveal delay={120}>
-              <div className="card-ring relative overflow-hidden rounded-[1.5rem] bg-ink-900/80 p-7 sm:p-8">
+            <Reveal delay={280}>
+              <div className="card-ring relative mt-8 overflow-hidden rounded-[1.5rem] bg-ink-900/80 p-7 sm:p-8">
                 <div
                   aria-hidden
                   className="glow-brand absolute -bottom-20 -right-16 h-52 w-52 rounded-full opacity-45"
@@ -80,6 +75,40 @@ export default function Culture() {
                 </a>
               </div>
             </Reveal>
+          </div>
+
+          {/* Cột phải: chân dung người sáng lập, rồi tới ảnh tập thể */}
+          <div className="flex flex-col gap-5">
+          <Reveal delay={120}>
+            <figure className="card-ring relative aspect-3/4 overflow-hidden rounded-[1.75rem] bg-ink-900">
+              <MediaSlot
+                src={images.culture}
+                alt={`${t.culture.founder.name} — ${t.culture.founder.role}, Meli Network`}
+                seed={5}
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+              {/* Không có thẻ tên thì người xem không biết đây là ai */}
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950 via-ink-950/75 to-transparent px-6 pb-6 pt-16 sm:px-8 sm:pb-8">
+                <span className="block text-lg font-bold text-white sm:text-xl">
+                  {t.culture.founder.name}
+                </span>
+                <span className="mt-1.5 block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-400">
+                  {t.culture.founder.role}
+                </span>
+              </figcaption>
+            </figure>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <div className="card-ring relative aspect-video overflow-hidden rounded-[1.5rem] bg-ink-900">
+              <MediaSlot
+                src={images.team}
+                alt="Đội ngũ Meli Network trong một chương trình cộng đồng"
+                seed={6}
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+            </div>
+          </Reveal>
           </div>
         </div>
       </div>

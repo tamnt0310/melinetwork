@@ -60,7 +60,6 @@ const vi = {
   about: {
     eyebrow: "Đôi nét về Meli",
     title: "Nội\u00A0dung tốt xứng\u00A0đáng có một hệ\u00A0thống tốt phía\u00A0sau",
-    founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
     lead:
       "Meli Network bắt đầu từ một đội ngũ vận hành kênh nội dung, rồi lớn lên cùng chính những Creator mà chúng tôi đồng hành. Hôm nay Meli làm ba việc: phát triển Creator, triển khai chiến dịch cho thương hiệu, và chuyển nội dung thành doanh thu trên sàn.",
     body:
@@ -187,6 +186,7 @@ const vi = {
 
   culture: {
     eyebrow: "Con người Meli",
+    founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
     title: "Thứ khó sao\u00A0chép nhất là đội\u00A0ngũ",
     desc:
       "Công cụ thì ai cũng mua được. Thuật toán thì ai cũng phải học lại mỗi lần nền tảng đổi luật. Cái không mua được là một nhóm người hiểu nội dung, hiểu thị trường, và đã làm việc cùng nhau đủ lâu để biết phải xoay thế nào.",
@@ -300,7 +300,6 @@ const en: typeof vi = {
   about: {
     eyebrow: "About Meli",
     title: "Good content deserves a good system behind it",
-    founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
     lead:
       "Meli Network started as a small team running content channels, and grew up alongside the very creators we work with. Today Meli does three things: develop creators, run campaigns for brands, and turn content into marketplace revenue.",
     body:
@@ -425,6 +424,7 @@ const en: typeof vi = {
 
   culture: {
     eyebrow: "The people of Meli",
+    founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
     title: "The hardest thing to copy is a team",
     desc:
       "Anyone can buy the tools. Everyone has to relearn the algorithm each time a platform changes the rules. What you can't buy is a group of people who understand content, understand the market, and have worked together long enough to know how to adapt.",
