@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { LogoMark } from "./Logo";
 
 /**
@@ -11,23 +13,33 @@ export default function MediaSlot({
   alt = "",
   className = "",
   seed = 0,
+  sizes = "(max-width: 1024px) 100vw, 600px",
+  priority = false,
 }: {
   src?: string;
   alt?: string;
   className?: string;
   /** Đổi số này để nền trừu tượng của mỗi khung khác nhau một chút */
   seed?: number;
+  /** Gợi ý cho trình duyệt biết khung ảnh rộng bao nhiêu, để tải đúng cỡ cần thiết */
+  sizes?: string;
+  /** Bật cho ảnh nằm ngay màn hình đầu — tải sớm thay vì chờ cuộn tới */
+  priority?: boolean;
 }) {
   if (src) {
+    // Dùng next/image: Vercel tự chuyển sang WebP/AVIF và cắt sẵn nhiều kích
+    // thước. Ảnh chụp màn hình dạng PNG rất nặng, qua bước này nhẹ đi đáng kể.
     return (
-      /* eslint-disable-next-line @next/next/no-img-element */
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        decoding="async"
-        className={`h-full w-full object-cover ${className}`}
-      />
+      <div className={`relative h-full w-full ${className}`}>
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover"
+        />
+      </div>
     );
   }
 

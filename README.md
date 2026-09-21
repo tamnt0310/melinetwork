@@ -126,12 +126,11 @@ Favicon nằm ở [`app/icon.svg`](app/icon.svg) — thay file này là xong.
 
 ### Logo đối tác
 
-Trong [`components/Partners.tsx`](components/Partners.tsx), dải logo đang hiển thị bằng chữ.
-Bỏ file logo vào `public/logos/` rồi đổi dòng đã đánh dấu 👉 thành:
+8 logo thật nằm trong `public/logos/`, khai báo tại `partners.logos` trong
+[`lib/content.ts`](lib/content.ts). Thêm hoặc bớt thì sửa mảng đó, dải logo tự chạy lại.
 
-```tsx
-<img src={`/logos/${name}.svg`} alt={name} className="max-h-8 w-auto opacity-70" />
-```
+Logo gốc là ảnh **nền trắng chữ đen** nên được đặt trên thẻ trắng bo góc — để thẳng lên nền
+tối của web thì chữ đen sẽ chìm mất. Logo mới nên giữ đúng khổ **176 × 80 px** cho đồng bộ.
 
 ---
 
@@ -218,9 +217,24 @@ lib/
 
 ## 10. Việc cần làm trước khi công bố
 
-- [ ] Thay toàn bộ nội dung `⚠️ MẪU` trong `lib/content.ts`
-- [ ] Bổ sung ảnh thật vào `public/` và khai báo trong `lib/images.ts`
-- [ ] Thay logo Meli và logo đối tác
+Đã xong:
+
+- [x] Nội dung 5 khối chính, lấy từ bảng Google Sheets của Meli
+- [x] Thông tin liên hệ thật (địa chỉ, email, điện thoại)
+- [x] Pháp nhân và mã số thuế ở footer
+- [x] 4 ảnh dự án tiêu biểu trong `public/images/cases/`
+- [x] 8 logo đối tác thật trong `public/logos/`
+
+Còn lại:
+
+- [ ] **Dải 4 con số dưới hero vẫn là số mẫu** (250+ kênh · 1.2 tỷ view ·
+      180+ chiến dịch · 6 nền tảng) — chủ dự án chọn giữ tạm, cần thay bằng
+      số thật. Sửa ở `stats.items` trong `lib/content.ts`
+- [ ] Tiêu đề hero, 3 giá trị văn hoá, số vị trí đang tuyển
+- [ ] Ảnh hero, ảnh giới thiệu, ảnh đội ngũ (`lib/images.ts` còn để trống,
+      website đang tự vẽ hình trừu tượng thay thế)
+- [ ] Tên và chức danh người nói trong 3 trích dẫn đối tác
+- [ ] Thay logo Meli bằng file gốc
 - [ ] Cấu hình Resend để nhận email từ biểu mẫu
 - [ ] Xin phép khách hàng trước khi đăng tên/logo của họ
 - [ ] Gắn Google Analytics hoặc Meta Pixel nếu cần đo lường

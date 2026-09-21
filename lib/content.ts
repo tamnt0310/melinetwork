@@ -50,12 +50,14 @@ const vi = {
 
   // ⚠️ MẪU — TOÀN BỘ SỐ LIỆU DƯỚI ĐÂY LÀ GIẢ ĐỊNH. Thay bằng số thật.
   stats: {
-    note: "Số liệu tổng hợp từ hoạt động của mạng lưới",
-    // Chỉ liệt kê con số đã được xác nhận. Muốn thêm ô mới, chèn vào mảng này —
-    // bố cục tự giãn theo số lượng (xem components/Stats.tsx).
+    note: "Số liệu cập nhật quý gần nhất", // ⚠️ MẪU
+    // ⚠️ MẪU — 4 con số dưới đây chưa được xác nhận, cần thay bằng số liệu thật.
+    // Lưới tự giãn theo số ô (1-4), xem components/Stats.tsx.
     items: [
-      { value: "13", suffix: "+ tỷ", label: "GMV từ mạng lưới Creator và Commerce" },
-      { value: "300", suffix: "K+", label: "Người theo dõi, hàng triệu lượt yêu thích" },
+      { value: "250", suffix: "+", label: "Kênh & nhà sáng tạo đồng hành" },
+      { value: "1.2", suffix: " tỷ", label: "Lượt xem mỗi tháng" },
+      { value: "180", suffix: "+", label: "Chiến dịch thương hiệu đã triển khai" },
+      { value: "6", suffix: "", label: "Nền tảng vận hành song song" },
     ],
   },
 
@@ -152,8 +154,16 @@ const vi = {
     eyebrow: "Niềm tin từ đối tác",
     title: "Niềm\u00A0tin từ những thương\u00A0hiệu & nền\u00A0tảng hàng\u00A0đầu",
     desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, Marketing và Commerce.",
-    // ⚠️ MẪU — thay bằng logo thật (xem hướng dẫn trong README)
-    logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
+    logos: [
+      { name: "Converse", src: "/logos/converse.png" },
+      { name: "Puma", src: "/logos/puma.png" },
+      { name: "Kappa", src: "/logos/kappa.png" },
+      { name: "adidas", src: "/logos/adidas.png" },
+      { name: "LocknLock", src: "/logos/locknlock.png" },
+      { name: "Biti's", src: "/logos/bitis.png" },
+      { name: "Sunhouse", src: "/logos/sunhouse.png" },
+      { name: "Crocs", src: "/logos/crocs.png" },
+    ],
     quotesTitle: "Chia sẻ từ đối tác và Creator",
     // ⚠️ Ba trích dẫn dưới đây chưa có tên người nói. Điền `name` và `role` khi đã
     // xin phép — để trống thì thẻ vẫn hiển thị đẹp, chỉ là không có người đứng tên.
@@ -252,7 +262,7 @@ const vi = {
       { name: "LinkedIn", href: "#" },
     ],
     legal: "Bản quyền thuộc về Meli Network.",
-    company: "CÔNG TY TNHH MELI NETWORK — MST: 0xxxxxxxxx", // ⚠️ MẪU
+    company: "CÔNG TY TNHH MELI CHANNEL — MST: 0111356259",
     backToTop: "Lên đầu trang",
   },
 };
@@ -292,10 +302,12 @@ const en: typeof vi = {
   },
 
   stats: {
-    note: "Figures drawn from network activity",
+    note: "Figures from the most recent quarter",
     items: [
-      { value: "13", suffix: "B+ VND", label: "GMV across the creator network and commerce" },
-      { value: "300", suffix: "K+", label: "Followers, with millions of likes" },
+      { value: "250", suffix: "+", label: "Channels & creators in the network" },
+      { value: "1.2", suffix: "B", label: "Monthly views generated" },
+      { value: "180", suffix: "+", label: "Brand campaigns delivered" },
+      { value: "6", suffix: "", label: "Platforms operated in parallel" },
     ],
   },
 
@@ -392,7 +404,16 @@ const en: typeof vi = {
     eyebrow: "Trusted by partners",
     title: "Trust from the leading brands and platforms",
     desc: "Meli Network partners with major platforms and works alongside many brands across Creator, Marketing and Commerce.",
-    logos: ["YouTube", "TikTok", "Meta", "Shopee", "Google Ads", "Lazada", "Spotify", "Zalo"],
+    logos: [
+      { name: "Converse", src: "/logos/converse.png" },
+      { name: "Puma", src: "/logos/puma.png" },
+      { name: "Kappa", src: "/logos/kappa.png" },
+      { name: "adidas", src: "/logos/adidas.png" },
+      { name: "LocknLock", src: "/logos/locknlock.png" },
+      { name: "Biti's", src: "/logos/bitis.png" },
+      { name: "Sunhouse", src: "/logos/sunhouse.png" },
+      { name: "Crocs", src: "/logos/crocs.png" },
+    ],
     quotesTitle: "What partners and creators say",
     testimonials: [
       {
@@ -487,7 +508,7 @@ const en: typeof vi = {
       { name: "LinkedIn", href: "#" },
     ],
     legal: "Meli Network. All rights reserved.",
-    company: "MELI NETWORK CO., LTD — Tax ID: 0xxxxxxxxx",
+    company: "MELI CHANNEL CO., LTD — Tax ID: 0111356259",
     backToTop: "Back to top",
   },
 };

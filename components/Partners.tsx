@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useLang } from "@/lib/lang";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
@@ -24,13 +26,20 @@ export default function Partners() {
       <Reveal delay={120}>
         <div className="marquee-mask mt-14 overflow-hidden">
           <div className="marquee-track flex w-max animate-marquee items-center gap-4">
-            {strip.map((name, i) => (
+            {strip.map((logo, i) => (
+              /* Logo gốc là ảnh nền trắng chữ đen, nên phải đặt trên thẻ trắng —
+                 để thẳng lên nền tối thì chữ đen sẽ chìm mất. */
               <div
-                key={`${name}-${i}`}
-                className="flex h-20 w-44 shrink-0 items-center justify-center rounded-2xl border border-line/80 bg-ink-900/60 px-4"
+                key={`${logo.name}-${i}`}
+                className="flex h-20 w-44 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white ring-1 ring-white/15"
               >
-                {/* 👉 Thay <span> bằng <img src="/logos/xxx.svg" …/> khi có logo thật */}
-                <span className="text-sm font-bold tracking-wide text-muted/80">{name}</span>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={176}
+                  height={80}
+                  className="h-full w-full object-contain"
+                />
               </div>
             ))}
           </div>
