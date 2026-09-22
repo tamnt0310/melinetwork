@@ -3,15 +3,17 @@ import { NextResponse } from "next/server";
 /* ============================================================================
  * NHẬN THÔNG TIN TỪ BIỂU MẪU LIÊN HỆ
  * ----------------------------------------------------------------------------
- * Mặc định: ghi log ra server (xem tại Vercel → Project → Logs).
- * Muốn nhận email thật: tạo tài khoản https://resend.com rồi khai báo 3 biến
- * môi trường trong Vercel (Settings → Environment Variables):
+ * Thứ tự ưu tiên, tuỳ biến môi trường khai báo trên Vercel:
  *
- *   RESEND_API_KEY = re_xxxxxxxx
- *   CONTACT_TO     = contact@melinetwork.vn      (email nhận)
- *   CONTACT_FROM   = website@melinetwork.vn      (tên miền đã xác thực ở Resend)
+ * 1. Google Sheet (đang dùng) — ghi vào bảng tính + gửi email về Gmail:
+ *      GOOGLE_SHEET_WEBHOOK_URL = https://script.google.com/macros/s/.../exec
+ *      GOOGLE_SHEET_SECRET      = mã bí mật, giống hệt SECRET trong script
+ *    Script nằm ở google-apps-script/lien-he.gs, hướng dẫn cài ở HUONG-DAN.md.
  *
- * Có đủ 3 biến là route này tự gửi email, không cần sửa code.
+ * 2. Resend — chỉ gửi email (dự phòng, dùng khi không khai báo Google Sheet):
+ *      RESEND_API_KEY, CONTACT_TO, CONTACT_FROM
+ *
+ * 3. Không khai báo gì: chỉ ghi log ra server (Vercel → Logs, giữ rất ngắn).
  * ==========================================================================*/
 
 const escapeHtml = (s: string) =>
@@ -42,6 +44,34 @@ export async function POST(request: Request) {
 
   if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json({ error: "invalid_fields" }, { status: 422 });
+  }
+
+  // Luôn ghi log làm bản dự phòng, kể cả khi gửi đi thành công
+  console.log("[contact] Lead mới:", { name, email, phone, topic });
+
+  const { GOOGLE_SHEET_WEBHOOK_URL, GOOGLE_SHEET_SECRET } = process.env;
+
+  if (GOOGLE_SHEET_WEBHOOK_URL && GOOGLE_SHEET_SECRET) {
+    try {
+      // Apps Script trả về 302 sang googleusercontent.com; fetch tự đi theo
+      // và đổi sang GET — đúng cách Google yêu cầu để đọc kết quả.
+      const res = await fetch(GOOGLE_SHEET_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          secret: GOOGLE_SHEET_SECRET,
+          name, email, phone, topic, message,
+          lang: get("lang") || "vi",
+        }),
+        signal: AbortSignal.timeout(15000),
+      });
+      const out = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
+      if (!out?.ok) throw new Error(out?.error ?? `HTTP ${res.status}`);
+      return NextResponse.json({ ok: true });
+    } catch (err) {
+      console.error("[contact] Google Sheet lỗi:", err, { name, email, phone, topic, message });
+      return NextResponse.json({ error: "sheet_failed" }, { status: 502 });
+    }
   }
 
   const { RESEND_API_KEY, CONTACT_TO, CONTACT_FROM } = process.env;
@@ -91,14 +121,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Chưa cấu hình email → vẫn nhận, ghi log lại để không mất lead.
-  console.log("[contact] Lead mới (chưa cấu hình email):", {
-    name,
-    email,
-    phone,
-    topic,
-    message,
-  });
-
+  // Chưa cấu hình nơi nhận → chỉ còn bản log
+  console.log("[contact] Chưa cấu hình nơi nhận, nội dung:", message);
   return NextResponse.json({ ok: true, stored: "log" });
 }

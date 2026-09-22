@@ -134,28 +134,17 @@ tối của web thì chữ đen sẽ chìm mất. Logo mới nên giữ đúng k
 
 ---
 
-## 6. Nhận email từ biểu mẫu liên hệ
+## 6. Nhận thông tin từ biểu mẫu liên hệ
 
-Mặc định, thông tin khách gửi được ghi vào log của Vercel (**Project → Logs**) — không mất lead,
-nhưng phải vào xem thủ công.
+Biểu mẫu gửi về **Google Sheet + Gmail**: mỗi khách là một dòng trong bảng tính, kèm một email
+thông báo. Miễn phí hoàn toàn.
 
-Để nhận email tự động:
+Script và hướng dẫn cài từng bước: [`google-apps-script/HUONG-DAN.md`](google-apps-script/HUONG-DAN.md).
+Cần khai báo 2 biến trên Vercel: `GOOGLE_SHEET_WEBHOOK_URL`, `GOOGLE_SHEET_SECRET`.
 
-1. Đăng ký [resend.com](https://resend.com) (miễn phí 3.000 email/tháng), xác thực tên miền
-2. Vào Vercel → **Settings → Environment Variables**, thêm 3 biến:
-
-```
-RESEND_API_KEY = re_xxxxxxxxxxxx
-CONTACT_TO     = contact@melinetwork.vn
-CONTACT_FROM   = website@melinetwork.vn
-```
-
-3. Deploy lại. Không cần sửa dòng code nào — [`app/api/contact/route.ts`](app/api/contact/route.ts)
-   tự động chuyển sang gửi email khi thấy đủ 3 biến.
-
-Biểu mẫu đã có sẵn: kiểm tra dữ liệu đầu vào, bẫy bot (trường ẩn), và nút bấm khoá khi đang gửi.
-
----
+Chưa khai báo thì nội dung chỉ được ghi vào Vercel → Logs — nơi này giữ dữ liệu rất ngắn,
+nên đừng để lâu. Phương án dự phòng chỉ gửi email qua Resend vẫn còn trong code
+(xem ghi chú đầu file [`app/api/contact/route.ts`](app/api/contact/route.ts)).
 
 ## 7. Đổi tên miền cho SEO
 
@@ -235,7 +224,7 @@ Còn lại:
       website đang tự vẽ hình trừu tượng thay thế)
 - [ ] Tên và chức danh người nói trong 3 trích dẫn đối tác
 - [ ] Thay logo Meli bằng file gốc
-- [ ] Cấu hình Resend để nhận email từ biểu mẫu
+- [ ] Cài Google Sheet nhận liên hệ (mục 6)
 - [ ] Xin phép khách hàng trước khi đăng tên/logo của họ
 - [ ] Gắn Google Analytics hoặc Meta Pixel nếu cần đo lường
 - [ ] Chạy `npm audit` và xử lý hết cảnh báo trước khi deploy
