@@ -65,12 +65,22 @@ export async function POST(request: Request) {
         }),
         signal: AbortSignal.timeout(15000),
       });
-      const out = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
-      if (!out?.ok) throw new Error(out?.error ?? `HTTP ${res.status}`);
+      const text = await res.text();
+      let out: { ok?: boolean; error?: string } | null = null;
+      try {
+        out = JSON.parse(text);
+      } catch {
+        // Không phải JSON: thường là trang đăng nhập Google (sai quyền truy
+        // cập, hoặc dán nhầm link /dev thay vì /exec)
+      }
+      if (!out) throw new Error(`not_json:${res.status}:${res.url.includes("accounts.google") ? "login_page" : "other"}`);
+      if (!out.ok) throw new Error(out.error ?? "script_error");
       return NextResponse.json({ ok: true });
     } catch (err) {
-      console.error("[contact] Google Sheet lỗi:", err, { name, email, phone, topic, message });
-      return NextResponse.json({ error: "sheet_failed" }, { status: 502 });
+      const reason = err instanceof Error ? (err.name === "TimeoutError" ? "timeout" : err.message) : "unknown";
+      console.error("[contact] Google Sheet lỗi:", reason, { name, email, phone, topic, message });
+      // Trả kèm mã lý do để chẩn đoán nhanh — chỉ là mã phân loại, không chứa bí mật
+      return NextResponse.json({ error: "sheet_failed", reason }, { status: 502 });
     }
   }
 
