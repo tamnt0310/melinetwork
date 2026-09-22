@@ -5,6 +5,7 @@ import { images } from "@/lib/images";
 import MediaSlot from "./MediaSlot";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import { rich } from "@/lib/rich";
 
 export default function About() {
   const { t } = useLang();
@@ -32,12 +33,12 @@ export default function About() {
             <SectionHeading eyebrow={t.about.eyebrow} title={t.about.title}>
               <Reveal delay={140}>
                 <p className="mt-6 text-base leading-relaxed text-fg/90 sm:text-lg">
-                  {t.about.lead}
+                  {rich(t.about.lead)}
                 </p>
               </Reveal>
               {t.about.body.map((paragraph, i) => (
                 <Reveal key={paragraph} delay={200 + i * 60}>
-                  <p className="mt-5 text-base leading-relaxed text-muted">{paragraph}</p>
+                  <p className="mt-5 text-base leading-relaxed text-muted">{rich(paragraph)}</p>
                 </Reveal>
               ))}
 
@@ -65,6 +66,17 @@ export default function About() {
                 </Reveal>
               ))}
             </div>
+
+            {/* Khẩu hiệu thương hiệu */}
+            <Reveal delay={420}>
+              <p className="mt-10 flex flex-wrap gap-x-3 gap-y-1 border-t border-line pt-6 text-lg font-extrabold tracking-tight sm:text-xl">
+                {t.about.tagline.map((phrase, i) => (
+                  <span key={phrase} className={i === t.about.tagline.length - 1 ? "text-brand-400" : "text-white"}>
+                    {phrase}
+                  </span>
+                ))}
+              </p>
+            </Reveal>
           </div>
         </div>
       </div>
