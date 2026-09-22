@@ -211,6 +211,12 @@ const vi = {
         desc: "Kết nối nguồn lực, lan tỏa kiến thức và cùng xây dựng một cộng đồng Creator tích cực, phát triển bền vững.",
       },
     ],
+    valuesIntro: "Ba điều Meli luôn giữ trong cách làm việc",
+    values: [
+      { title: "Làm việc có Tâm", desc: "Đặt sự tử tế, tận tâm và giá trị thật vào từng việc mình làm." },
+      { title: "Giữ chữ Tín", desc: "Tôn trọng cam kết, làm đúng điều đã nói và xây dựng niềm tin bằng hành động." },
+      { title: "Có trách nhiệm", desc: "Không chỉ hoàn thành công việc, mà cùng chịu trách nhiệm với kết quả và giá trị tạo ra." },
+    ],
   },
 
   contact: {
@@ -458,6 +464,12 @@ const en: typeof vi = {
         headline: "Learning, sharing and creating value together.",
         desc: "Connecting resources, spreading knowledge, and building a positive, sustainable creator community.",
       },
+    ],
+    valuesIntro: "Three things Meli always holds to",
+    values: [
+      { title: "Work with heart", desc: "Bring decency, dedication and real value to every piece of work." },
+      { title: "Keep our word", desc: "Honour commitments, do what we said we'd do, and build trust through action." },
+      { title: "Take responsibility", desc: "Not just finish the job, but share responsibility for the results and the value created." },
     ],
   },
 

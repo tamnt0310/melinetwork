@@ -48,6 +48,29 @@ export default function Culture() {
           ))}
         </div>
 
+
+        {/* Ba điều Meli luôn giữ */}
+        <Reveal>
+          <h3 className="mt-20 text-center text-sm font-bold uppercase tracking-[0.18em] text-faint">
+            {t.culture.valuesIntro}
+          </h3>
+        </Reveal>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {t.culture.values.map((v, i) => (
+            <Reveal key={v.title} delay={i * 100}>
+              <div className="relative h-full overflow-hidden rounded-[1.5rem] border border-line/70 bg-ink-900/60 p-7 transition-colors hover:border-brand-500/40">
+                <span className="text-xs font-bold tracking-[0.22em] text-brand-500">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h4 className="mt-4 text-lg font-extrabold uppercase tracking-wide text-white">
+                  {v.title}
+                </h4>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{v.desc}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
