@@ -73,7 +73,17 @@ export async function POST(request: Request) {
         // Không phải JSON: thường là trang đăng nhập Google (sai quyền truy
         // cập, hoặc dán nhầm link /dev thay vì /exec)
       }
-      if (!out) throw new Error(`not_json:${res.status}:${res.url.includes("accounts.google") ? "login_page" : "other"}`);
+      if (!out) {
+        // Trích thông báo lỗi Apps Script hiển thị (vd "Script function not
+        // found: doPost") cùng tên miền đích để biết URL có đúng loại không
+        const msg = text
+          .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ")
+          .replace(/<[^>]+>/g, " ")
+          .replace(/\s+/g, " ")
+          .trim()
+          .slice(0, 160);
+        throw new Error(`not_json:${res.status}:${new URL(res.url).host}:${msg}`);
+      }
       if (!out.ok) throw new Error(out.error ?? "script_error");
       return NextResponse.json({ ok: true });
     } catch (err) {
