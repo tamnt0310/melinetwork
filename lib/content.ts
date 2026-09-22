@@ -189,23 +189,28 @@ const vi = {
   culture: {
     eyebrow: "Con người Meli",
     founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
-    title: "Con\u00A0người là hạ\u00A0tầng bền\u00A0vững nhất",
+    title: "Con\u00A0người là nền\u00A0tảng của Meli",
     lead:
-      "Công nghệ có thể thay đổi. Thuật toán có thể thay đổi. Thị trường cũng có thể thay đổi mỗi ngày. Nhưng điều Meli lựa chọn giữ lại là con người, chữ Tín và cách chúng ta đối xử với nhau.",
+      "Công nghệ thay đổi, nền tảng thay đổi, thị trường thay đổi. Nhưng Meli lựa chọn xây dựng những giá trị bền vững từ **con người, sự tin tưởng và cách chúng ta đồng hành cùng nhau**.",
     body:
-      "Tại Meli Network, chúng tôi tin rằng một đội ngũ tốt không chỉ được tạo nên bởi năng lực, mà còn bởi cái Tâm, tinh thần trách nhiệm và sự tử tế trong cách làm việc.",
+      "Meli tin rằng một đội ngũ tốt không chỉ cần năng lực, mà còn cần **tận tâm, trách nhiệm và minh bạch** trong cách làm việc.",
     commitments: [
-      { who: "Với Creator", desc: "Chúng tôi trân trọng công sức, thời gian và niềm tin mà họ dành cho Meli." },
-      { who: "Với Thương hiệu", desc: "Chúng tôi đề cao sự minh bạch, hiệu quả và trách nhiệm với từng kết quả." },
-      { who: "Với Cộng đồng", desc: "Chúng tôi hướng đến những giá trị tích cực và bền vững, thay vì những thành quả ngắn hạn." },
+      {
+        who: "Với Creator",
+        headline: "Đồng hành thật sự.",
+        desc: "Tôn trọng công sức, lắng nghe nhu cầu và cùng Creator phát triển lâu dài.",
+      },
+      {
+        who: "Với Brand",
+        headline: "Làm việc rõ ràng, tạo ra kết quả.",
+        desc: "Hiểu đúng nhu cầu, triển khai sát mục tiêu và có trách nhiệm với từng cam kết.",
+      },
+      {
+        who: "Với Cộng đồng & Đối tác",
+        headline: "Cùng học hỏi, chia sẻ và tạo giá trị.",
+        desc: "Kết nối nguồn lực, lan tỏa kiến thức và cùng xây dựng một cộng đồng Creator tích cực, phát triển bền vững.",
+      },
     ],
-    valuesIntro: "Ba điều Meli luôn giữ trong cách làm việc",
-    values: [
-      { title: "Làm việc có Tâm", desc: "Đặt sự tử tế và giá trị thật vào trong từng việc mình làm." },
-      { title: "Giữ chữ Tín", desc: "Trân trọng mọi cam kết và xây dựng uy tín bằng hành động." },
-      { title: "Có trách nhiệm", desc: "Không chỉ hoàn thành công việc, mà cùng chịu trách nhiệm với kết quả và những giá trị mình tạo ra." },
-    ],
-    closing: "Làm việc bằng năng lực. Đồng hành bằng cái Tâm. Giữ nhau bằng chữ Tín.",
   },
 
   contact: {
@@ -432,23 +437,28 @@ const en: typeof vi = {
   culture: {
     eyebrow: "The people of Meli",
     founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
-    title: "People are the most durable infrastructure",
+    title: "People are the foundation of Meli",
     lead:
-      "Technology changes. Algorithms change. The market can change by the day. What Meli chooses to hold on to is people, our word, and the way we treat one another.",
+      "Technology changes, platforms change, markets change. But Meli chooses to build lasting value from **people, trust, and the way we work alongside one another**.",
     body:
-      "At Meli Network we believe a good team is built not only on capability, but on heart, a sense of responsibility, and decency in how the work gets done.",
+      "Meli believes a good team needs more than capability — it needs **dedication, responsibility and transparency** in how the work gets done.",
     commitments: [
-      { who: "With creators", desc: "We respect the effort, the time and the trust they place in Meli." },
-      { who: "With brands", desc: "We hold ourselves to transparency, effectiveness and accountability for every result." },
-      { who: "With the community", desc: "We aim for positive, lasting value rather than short-term wins." },
+      {
+        who: "With creators",
+        headline: "Real partnership.",
+        desc: "Respecting their effort, listening to what they need, and growing together for the long term.",
+      },
+      {
+        who: "With brands",
+        headline: "Clear work, real results.",
+        desc: "Understanding the brief, executing close to the goal, and owning every commitment.",
+      },
+      {
+        who: "With the community & partners",
+        headline: "Learning, sharing and creating value together.",
+        desc: "Connecting resources, spreading knowledge, and building a positive, sustainable creator community.",
+      },
     ],
-    valuesIntro: "Three things Meli always holds to",
-    values: [
-      { title: "Work with heart", desc: "Put decency and real value into every piece of work we do." },
-      { title: "Keep our word", desc: "Honour every commitment and build trust through action." },
-      { title: "Take responsibility", desc: "Not just finish the job, but share responsibility for the results and the value we create." },
-    ],
-    closing: "Working through capability. Partnering with heart. Holding together by our word.",
   },
 
   contact: {
