@@ -17,11 +17,11 @@ export const images = {
   // Ảnh gốc 596 × 372 px đã được phóng 1,6 lần và làm nét (954 × 595) để chữ
   // trong ảnh chụp màn hình không bị mờ trên màn hình Retina.
   cases: [
-    "/images/cases/1-gmv-tiktok-shop.png",   // ẢNH 1 — bảng chỉ số GMV TikTok Shop
-    "/images/cases/2-phanh-phieu-luu-ky.webp", // ẢNH 2 — kênh Phanh Phiêu Lưu Ký
-    // ⚠️ CHỜ ẢNH: kênh Khói suyngam. Để trống thay vì dùng ảnh kênh khác —
+    // ⚠️ CHỜ ẢNH: kênh Khói suyngam. Để trống thay vì mượn ảnh kênh khác —
     //    ảnh một kênh đặt cạnh chữ nói về kênh khác là sai lệch với người xem.
-    "",                                      // ẢNH 3 — kênh Khói suyngam
+    "",                                      // ẢNH 1 — kênh Khói suyngam
+    "/images/cases/2-phanh-phieu-luu-ky.webp", // ẢNH 2 — kênh Phanh Phiêu Lưu Ký
+    "/images/cases/3-bau-troi-tich-cuc.webp", // ẢNH 3 — kênh Bầu Trời Tích Cực
     "/images/cases/4-livestream-kiot-khoi.webp", // ẢNH 4 — chỉ số phiên livestream Kiot Khói
   ],
 } as const;

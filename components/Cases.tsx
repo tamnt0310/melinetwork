@@ -5,6 +5,7 @@ import { images } from "@/lib/images";
 import MediaSlot from "./MediaSlot";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import { rich } from "@/lib/rich";
 
 export default function Cases() {
   const { t } = useLang();
@@ -30,7 +31,7 @@ export default function Cases() {
                   </h3>
                   {(Array.isArray(c.desc) ? c.desc : [c.desc]).map((paragraph) => (
                     <p key={paragraph} className="mt-3 text-sm leading-relaxed text-muted">
-                      {paragraph}
+                      {rich(paragraph)}
                     </p>
                   ))}
                 </div>

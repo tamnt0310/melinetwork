@@ -140,26 +140,32 @@ const vi = {
     desc: "Những con số dưới đây phản ánh một phần quy mô hoạt động và những kết quả Meli đã ghi nhận trong quá trình đồng hành cùng Creator và Thương hiệu.",
     items: [
       {
-        title: "Biến sức mạnh Creator và nội dung thành giá trị thương mại thực",
-        desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
-      },
-      {
-        title: "300K+ người theo\u00A0dõi · 10M+ lượt yêu\u00A0thích",
-        desc: [
-          "Từ nội dung chân thật, truyền cảm hứng và nhất quán với cá tính riêng, Phanh Phiêu Lưu Ký đã xây dựng được một cộng đồng yêu thích khám phá, trải nghiệm và lối sống khác biệt.",
-          "Một hành trình từ câu chuyện cá nhân → nội dung có giá trị → cộng đồng gắn kết → sức ảnh hưởng, cho thấy khi Creator có bản sắc rõ ràng và chiến lược nội dung nhất quán, nội dung có thể trở thành một tài sản tạo ra giá trị lâu dài.",
-        ],
-      },
-      {
         title: "Lan tỏa những thông\u00A0điệp chạm đến hàng\u00A0triệu người",
         desc: [
-          "Từ những thông điệp về cuộc sống được kể bằng góc nhìn chân thật và lay động, Creator Khói suyngam đã tạo nên những nội dung viral với hàng chục triệu lượt yêu thích và hàng triệu lượt đăng lại.",
+          "Từ những thông điệp về cuộc sống được kể bằng góc nhìn chân thật và lay động, Creator **Khói suyngam** đã tạo nên những nội dung viral với hàng chục triệu lượt yêu thích và hàng triệu lượt đăng lại.",
           "Không chỉ tạo ra những nội dung được lan truyền mạnh mẽ, kênh còn từng bước xây dựng một cộng đồng lớn cùng chia sẻ những giá trị, góc nhìn và cảm xúc tích cực về cuộc sống — biến nội dung thành sức ảnh hưởng có khả năng lan tỏa vượt ra ngoài một lượt xem.",
         ],
       },
       {
+        title: "Biến câu chuyện cá\u00A0nhân thành sức ảnh\u00A0hưởng",
+        desc: [
+          "Từ những nội dung chân thật, truyền cảm hứng và nhất quán với cá tính riêng, **Phanh Phiêu Lưu Ký** đã biến những trải nghiệm khám phá đời sống thành các câu chuyện có sức hút, xây dựng cộng đồng **300K+ người theo dõi với hơn 10M+ lượt yêu thích**.",
+          "Từ **câu chuyện cá nhân → nội dung có giá trị → cộng đồng gắn kết → sức ảnh hưởng**, Phanh Phiêu Lưu Ký cho thấy khi Creator có bản sắc rõ ràng và chiến lược nội dung nhất quán, những điều bình dị trong cuộc sống cũng có thể trở thành tài sản nội dung tạo ra giá trị lâu dài.",
+        ],
+      },
+      {
+        title: "Xây dựng hệ sinh\u00A0thái nội\u00A0dung từ những điều bình\u00A0dị",
+        desc: [
+          "Từ những hoạt động đời sống rất tự nhiên và gần gũi, **Bầu Trời Tích Cực** biến những câu chuyện thường ngày thành các series nội dung có sức hút, tạo nên một cộng đồng yêu thích và gắn kết với Creator.",
+          "Với hàng triệu lượt yêu thích cùng hiệu quả thương mại nổi bật, các nội dung Affiliate của kênh duy trì **doanh số hàng tháng ở mức hàng tỷ đồng** — cho thấy những câu chuyện đời sống, khi được xây dựng đúng cách, có thể đồng thời tạo ra sức hút cộng đồng và giá trị thương mại.",
+        ],
+      },
+      {
         title: "Biến sức mạnh khán\u00A0giả thành giá\u00A0trị thương\u00A0mại",
-        desc: "Từ nội dung và niềm tin được xây dựng với cộng đồng, KOC Kiot Khói đã tạo ra nhiều phiên livestream với doanh số hàng tỷ đồng, cho thấy sức ảnh hưởng của Creator có thể được chuyển hóa thành hành động, doanh thu và giá trị thương mại thực.",
+        desc: [
+          "Từ nội dung được xây dựng nhất quán và niềm tin với cộng đồng, **KOC Kiot Khói** đã thành công tạo ra nhiều phiên livestream với **doanh số hàng tỷ đồng**, biến sự quan tâm và tương tác của khán giả thành hành động mua hàng thực tế.",
+          "Không chỉ tạo ra sức ảnh hưởng trên nền tảng, Kiot Khói cho thấy khả năng kết nối **Creator – Cộng đồng – Sản phẩm**, từ đó chuyển hóa sức ảnh hưởng thành **doanh thu và giá trị thương mại có thể đo lường**.",
+        ],
       },
     ],
   },
@@ -402,26 +408,32 @@ const en: typeof vi = {
     desc: "The figures below reflect part of the scale we operate at and the results Meli has recorded while working alongside creators and brands.",
     items: [
       {
-        title: "Turning creator and content strength into real commercial value",
-        desc: "From content development through to conversion, Meli builds a value chain you can actually measure.",
-      },
-      {
-        title: "300K+ followers · 10M+ likes",
+        title: "Messages that reach millions",
         desc: [
-          "Through honest, inspiring content that stays true to a distinct personality, Phanh Phiêu Lưu Ký has built a community drawn to exploration, experience and a different way of living.",
-          "A journey from personal story → content with real value → a connected community → genuine influence. It shows that when a creator has a clear identity and a consistent content strategy, content becomes an asset that keeps creating value.",
+          "Through messages about life told from an honest, affecting point of view, creator **Khói suyngam** has produced viral content with tens of millions of likes and millions of reposts.",
+          "Beyond content that simply spreads, the channel has steadily built a large community sharing positive values, perspectives and feelings about life — turning content into influence that carries far beyond a single view.",
         ],
       },
       {
-        title: "Messages that reach millions",
+        title: "Turning a personal story into influence",
         desc: [
-          "Told through an honest, affecting lens, Creator Khói suyngam's reflections on life have become viral content with tens of millions of likes and millions of reposts.",
-          "Beyond content that spreads, the channel has steadily built a large community sharing the same values, perspectives and positive feelings about life — turning content into influence that carries far beyond a single view.",
+          "Through honest, inspiring content that stays true to a distinct personality, **Phanh Phiêu Lưu Ký** has turned real-life exploration into stories with genuine pull, building a community of **300K+ followers and over 10M+ likes**.",
+          "From **personal story → content with real value → a connected community → influence**, Phanh Phiêu Lưu Ký shows that when a creator has a clear identity and a consistent content strategy, even ordinary moments become a content asset that keeps creating value.",
+        ],
+      },
+      {
+        title: "Building a content ecosystem out of ordinary life",
+        desc: [
+          "From everyday moments filmed naturally and close to home, **Bầu Trời Tích Cực** turns ordinary stories into content series with real pull, building a community that stays attached to the creator.",
+          "With millions of likes and strong commercial results, the channel's affiliate content sustains **monthly sales in the billions of đồng** — showing that everyday stories, built the right way, can create both community pull and commercial value.",
         ],
       },
       {
         title: "Turning audience strength into commercial value",
-        desc: "Built on content and the trust earned with a community, KOC Kiot Khói has run livestreams generating billions of đồng in sales — proof that a creator's influence can convert into action, revenue and real commercial value.",
+        desc: [
+          "Built on consistent content and the trust earned with a community, **KOC Kiot Khói** has run livestreams generating **billions of đồng in sales**, turning audience attention and interaction into real purchases.",
+          "Beyond on-platform influence, Kiot Khói shows the ability to connect **creator – community – product**, converting that influence into **revenue and commercial value you can measure**.",
+        ],
       },
     ],
   },
