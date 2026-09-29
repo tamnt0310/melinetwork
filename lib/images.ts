@@ -17,9 +17,9 @@ export const images = {
   // Ảnh gốc 596 × 372 px đã được phóng 1,6 lần và làm nét (954 × 595) để chữ
   // trong ảnh chụp màn hình không bị mờ trên màn hình Retina.
   cases: [
-    "/images/cases/1-livestream-kiot-khoi.webp", // ẢNH 1 — chỉ số phiên livestream Kiot Khói
+    "/images/cases/1-gmv-tiktok-shop.png",   // ẢNH 1 — bảng chỉ số GMV TikTok Shop
     "/images/cases/2-phanh-phieu-luu-ky.webp", // ẢNH 2 — kênh Phanh Phiêu Lưu Ký
     "/images/cases/3-bau-troi-tich-cuc.jpg", // ẢNH 3 — kênh Bầu trời tích cực
-    "/images/cases/4-kiot-khoi.jpg",         // ẢNH 4 — kênh Kiot khói
+    "/images/cases/4-livestream-kiot-khoi.webp", // ẢNH 4 — chỉ số phiên livestream Kiot Khói
   ],
 } as const;
