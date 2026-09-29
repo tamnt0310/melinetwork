@@ -140,8 +140,8 @@ const vi = {
     desc: "Những con số dưới đây phản ánh một phần quy mô hoạt động và những kết quả Meli đã ghi nhận trong quá trình đồng hành cùng Creator và Thương hiệu.",
     items: [
       {
-        title: "Biến sức mạnh Creator và nội dung thành giá trị thương mại thực",
-        desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
+        title: "Biến sức mạnh khán\u00A0giả thành giá\u00A0trị thương\u00A0mại",
+        desc: "Từ nội dung và niềm tin được xây dựng với cộng đồng, KOC Kiot Khói đã tạo ra nhiều phiên livestream với doanh số hàng tỷ đồng, cho thấy sức ảnh hưởng của Creator có thể được chuyển hóa thành hành động, doanh thu và giá trị thương mại thực.",
       },
       {
         title: "300K+ người theo\u00A0dõi · 10M+ lượt yêu\u00A0thích",
@@ -399,8 +399,8 @@ const en: typeof vi = {
     desc: "The figures below reflect part of the scale we operate at and the results Meli has recorded while working alongside creators and brands.",
     items: [
       {
-        title: "Turning creator and content strength into real commercial value",
-        desc: "From content development through to conversion, Meli builds a value chain you can actually measure.",
+        title: "Turning audience strength into commercial value",
+        desc: "Built on content and the trust earned with a community, KOC Kiot Khói has run livestreams generating billions of đồng in sales — proof that a creator's influence can convert into action, revenue and real commercial value.",
       },
       {
         title: "300K+ followers · 10M+ likes",
