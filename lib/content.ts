@@ -151,10 +151,10 @@ const vi = {
         ],
       },
       {
-        title: "Xây dựng hệ sinh\u00A0thái nội\u00A0dung từ những điều bình\u00A0dị",
+        title: "Lan tỏa những thông\u00A0điệp chạm đến hàng\u00A0triệu người",
         desc: [
-          "Từ những hoạt động đời sống rất tự nhiên và gần gũi, Bầu Trời Tích Cực biến những câu chuyện thường ngày thành các series nội dung có sức hút, tạo nên một cộng đồng yêu thích và gắn kết với Creator.",
-          "Với hàng triệu lượt yêu thích cùng hiệu quả thương mại nổi bật, các nội dung Affiliate của kênh duy trì doanh số hàng tháng ở mức hàng tỷ đồng — cho thấy những câu chuyện đời sống, khi được xây dựng đúng cách, có thể đồng thời tạo ra sức hút cộng đồng và giá trị thương mại.",
+          "Từ những thông điệp về cuộc sống được kể bằng góc nhìn chân thật và lay động, Creator Khói suyngam đã tạo nên những nội dung viral với hàng chục triệu lượt yêu thích và hàng triệu lượt đăng lại.",
+          "Không chỉ tạo ra những nội dung được lan truyền mạnh mẽ, kênh còn từng bước xây dựng một cộng đồng lớn cùng chia sẻ những giá trị, góc nhìn và cảm xúc tích cực về cuộc sống — biến nội dung thành sức ảnh hưởng có khả năng lan tỏa vượt ra ngoài một lượt xem.",
         ],
       },
       {
@@ -413,10 +413,10 @@ const en: typeof vi = {
         ],
       },
       {
-        title: "Building a content ecosystem out of ordinary life",
+        title: "Messages that reach millions",
         desc: [
-          "From everyday moments filmed naturally and close to home, Bầu Trời Tích Cực turns ordinary stories into content series with real pull, building a community that stays attached to the creator.",
-          "With millions of likes and strong commercial results, the channel's affiliate content sustains monthly sales in the billions of đồng — showing that everyday stories, built the right way, can create both community pull and commercial value.",
+          "Told through an honest, affecting lens, Creator Khói suyngam's reflections on life have become viral content with tens of millions of likes and millions of reposts.",
+          "Beyond content that spreads, the channel has steadily built a large community sharing the same values, perspectives and positive feelings about life — turning content into influence that carries far beyond a single view.",
         ],
       },
       {

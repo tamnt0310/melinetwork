@@ -19,7 +19,9 @@ export const images = {
   cases: [
     "/images/cases/1-gmv-tiktok-shop.png",   // ẢNH 1 — bảng chỉ số GMV TikTok Shop
     "/images/cases/2-phanh-phieu-luu-ky.webp", // ẢNH 2 — kênh Phanh Phiêu Lưu Ký
-    "/images/cases/3-bau-troi-tich-cuc.jpg", // ẢNH 3 — kênh Bầu trời tích cực
+    // ⚠️ CHỜ ẢNH: kênh Khói suyngam. Để trống thay vì dùng ảnh kênh khác —
+    //    ảnh một kênh đặt cạnh chữ nói về kênh khác là sai lệch với người xem.
+    "",                                      // ẢNH 3 — kênh Khói suyngam
     "/images/cases/4-livestream-kiot-khoi.webp", // ẢNH 4 — chỉ số phiên livestream Kiot Khói
   ],
 } as const;
