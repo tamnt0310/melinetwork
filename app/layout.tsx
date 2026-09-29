@@ -1,8 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Archivo, Be_Vietnam_Pro } from "next/font/google";
 import { LangProvider } from "@/lib/lang";
 import { content } from "@/lib/content";
 import "./globals.css";
+
+// Guideline: tiêu đề dùng Sinar Grotesk (font thương mại, không phát hành
+// công khai). Archivo là bản thay thế gần nhất và có đủ dấu tiếng Việt.
+const archivo = Archivo({
+  subsets: ["latin", "vietnamese"],
+  weight: ["500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-archivo",
+});
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
@@ -55,7 +64,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={beVietnamPro.variable}>
+    <html lang="vi" className={`${beVietnamPro.variable} ${archivo.variable}`}>
       <body>
         <LangProvider>{children}</LangProvider>
       </body>

@@ -40,7 +40,7 @@ export default function Partners() {
                  để thẳng lên nền tối thì chữ đen sẽ chìm mất. */
               <div
                 key={`${logo.name}-${i}`}
-                className="flex h-20 w-44 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white ring-1 ring-white/15"
+                className="flex h-20 w-44 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#F5F5F3] ring-1 ring-white/15"
               >
                 <Image
                   src={logo.src}

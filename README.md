@@ -165,7 +165,33 @@ Muốn dùng ảnh thiết kế riêng: xoá file đó và đặt `app/opengraph
 
 ---
 
-## 8. Đổi màu thương hiệu
+## 8. Nhận diện thương hiệu (Brand Guideline)
+
+Toàn bộ màu và font lấy từ **Brand Guideline Meli Network**:
+
+| Màu | Mã | Dùng cho |
+|---|---|---|
+| Dark Red | `#A60315` | chiều sâu, nền nhấn, gradient |
+| Bright Red | `#DD1E29` | nhận diện chính, nút CTA, điểm nhấn |
+| Silver Grey | `#B9C1CB` | chữ phụ, đường kẻ, chi tiết giao diện |
+| Soft White | `#F5F5F3` | màu chữ chính, nền thẻ logo đối tác |
+
+Font: tiêu đề **Archivo**, thân bài **Be Vietnam Pro** (đúng guideline).
+Guideline chỉ định tiêu đề dùng *Sinar Grotesk* — font thương mại, không phát hành
+công khai nên chưa dùng được; Archivo là bản thay thế gần nhất có đủ dấu tiếng Việt.
+Khi mua được Sinar Grotesk (định dạng woff2), chỉ cần thay khai báo font trong
+[`app/layout.tsx`](app/layout.tsx), không phải sửa chỗ nào khác.
+
+Guideline còn chỉ định *DM Serif Display Italic* cho trích dẫn — font này **không có
+bộ ký tự tiếng Việt**, dùng sẽ vỡ dấu, nên chưa áp dụng.
+
+Logo chính thức nền trong suốt nằm trong [`public/brand/`](public/brand):
+`logo-meli-network.png` (logo ngang, dùng ở header và footer),
+`logo-meli-channel-network.png`, `bieu-tuong.png` (biểu tượng).
+Favicon là [`app/icon.png`](app/icon.png) — biểu tượng trên nền tối bo góc, đúng mẫu
+"Ứng dụng (APP ICON)" trong guideline.
+
+## 9. Đổi màu thương hiệu
 
 Bảng màu khai báo tập trung trong khối `@theme` ở đầu [`app/globals.css`](app/globals.css):
 
@@ -178,7 +204,7 @@ Sửa ở đây là toàn bộ trang đổi theo.
 
 ---
 
-## 9. Cấu trúc thư mục
+## 10. Cấu trúc thư mục
 
 ```
 app/
@@ -204,7 +230,7 @@ lib/
 
 ---
 
-## 10. Việc cần làm trước khi công bố
+## 11. Việc cần làm trước khi công bố
 
 Đã xong:
 
@@ -223,7 +249,6 @@ Còn lại:
 - [ ] Ảnh hero, ảnh giới thiệu, ảnh đội ngũ (`lib/images.ts` còn để trống,
       website đang tự vẽ hình trừu tượng thay thế)
 - [ ] Tên và chức danh người nói trong 3 trích dẫn đối tác
-- [ ] Thay logo Meli bằng file gốc
 - [ ] Cài Google Sheet nhận liên hệ (mục 6)
 - [ ] Xin phép khách hàng trước khi đăng tên/logo của họ
 - [ ] Gắn Google Analytics hoặc Meta Pixel nếu cần đo lường
