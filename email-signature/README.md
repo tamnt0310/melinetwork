@@ -24,7 +24,7 @@ Logo nằm ở `../public/email/logo-meli.png`, phục vụ công khai tại
 | Mục | Bản cá nhân | Bản công ty |
 |---|---|---|
 | Dòng chính | Nguyễn Thanh Tâm | MELI NETWORK |
-| Dòng phụ | Founder & CEO | MCN · Agency Truyền thông · Thương mại số |
+| Dòng phụ | Founder & CEO | MCN · Truyền thông · Thương mại số |
 | Email | thanhtam@melinetwork.vn | contact@melinetwork.vn |
 | Điện thoại | 0967 773 300 | 0559 476 329 |
 | Website | www.melinetwork.vn | www.melinetwork.vn |

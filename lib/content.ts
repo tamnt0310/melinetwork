@@ -6,6 +6,17 @@
  * liệu thật của Meli Network trước khi chạy quảng cáo hoặc gửi cho đối tác.
  * Hai object `vi` và `en` PHẢI có cấu trúc giống hệt nhau.
  *
+ * NGUYÊN TẮC DÙNG TỪ (phần `vi`): câu tiếng Việt thì viết tiếng Việt.
+ * Chỉ giữ nguyên tiếng Anh ở ba nhóm:
+ *   1. Tên riêng: Meli MCN, Meli Media, Meli Commerce, tên nền tảng
+ *      (TikTok Shop, Shopee, Facebook, YouTube)
+ *   2. Cụm định vị và khẩu hiệu thương hiệu: "Creator, Content & Commerce",
+ *      "Build Creators · Build Influence · Build Revenue"
+ *   3. Thuật ngữ ngành chưa có từ Việt dùng phổ biến: Creator, KOL, KOC, MCN,
+ *      Affiliate, Livestream, Social Commerce, Creator Marketing, Booking, GMV
+ * Ngoài ba nhóm đó thì dịch: Content → nội dung, Brand → thương hiệu,
+ * Social Media → mạng xã hội, Followers → người theo dõi.
+ *
  * MẸO: `\u00A0` là dấu cách KHÔNG cho xuống dòng. Dùng nó giữa hai tiếng của
  * một từ ghép (ví dụ "sáng\u00A0tạo") để tiêu đề không bị ngắt giữa chừng.
  * ==========================================================================*/
@@ -35,7 +46,7 @@ const vi = {
   },
 
   hero: {
-    eyebrow: "MCN · Agency Truyền thông · Thương mại số",
+    eyebrow: "MCN · Truyền thông · Thương mại số",
     // ⚠️ MẪU — headline định vị, có thể thay bằng slogan chính thức của bạn
     titleLead: "Biến nội dung sáng\u00A0tạo thành",
     titleAccent: "tăng\u00A0trưởng bền\u00A0vững",
@@ -59,18 +70,18 @@ const vi = {
 
   about: {
     eyebrow: "Hệ sinh thái kết nối Creator, Content & Commerce",
-    title: "Từ Content đến giá\u00A0trị thực",
+    title: "Từ nội\u00A0dung đến giá\u00A0trị thực",
     // Cụm nằm giữa **...** được in đậm trên trang (xem lib/rich.tsx)
     lead:
-      "Meli Network là hệ sinh thái **Creator, Content & Commerce**, đồng hành cùng Creator trong phát triển kênh, nội dung và thương hiệu cá nhân; đồng thời kết nối Creator với Brand và các cơ hội hợp tác.",
+      "Meli Network là hệ sinh thái **Creator, Content & Commerce**, đồng hành cùng Creator trong phát triển kênh, nội dung và thương hiệu cá nhân; đồng thời kết nối Creator với thương hiệu và các cơ hội hợp tác.",
     body: [
-      "Meli đứng phía sau Creator và Brand, cùng tham gia từ **phát triển con người, xây dựng nội dung, kết nối cơ hội đến triển khai và thương mại hóa**.",
-      "Thông qua 3 trụ cột **Meli MCN – Meli Media – Meli Commerce**, Meli kết nối Creator, Brand và Content thành một hệ thống liền mạch, hướng tới những giá trị và kết quả thực tế.",
+      "Meli đứng phía sau Creator và thương hiệu, cùng tham gia từ **phát triển con người, xây dựng nội dung, kết nối cơ hội đến triển khai và thương mại hóa**.",
+      "Thông qua 3 trụ cột **Meli MCN – Meli Media – Meli Commerce**, Meli kết nối Creator, thương hiệu và nội dung thành một hệ thống liền mạch, hướng tới những giá trị và kết quả thực tế.",
     ],
-    closing: ["Meli không chỉ tạo ra Content.", "Meli xây dựng hệ thống để Content tạo ra giá trị."],
+    closing: ["Meli không chỉ tạo ra nội dung.", "Meli xây dựng hệ thống để nội dung tạo ra giá trị."],
     pillars: [
       { title: "Tận tâm", desc: "Đặt con người lên hàng đầu, chủ động đồng hành và sát sao trong từng công việc." },
-      { title: "Minh bạch", desc: "Rõ ràng trong cách làm việc, quyền lợi, doanh thu và cam kết với Creator và Brand." },
+      { title: "Minh bạch", desc: "Rõ ràng trong cách làm việc, quyền lợi, doanh thu và cam kết với Creator và thương hiệu." },
       { title: "Hiệu quả", desc: "Tập trung vào giải pháp thực tế, tối ưu nguồn lực và hướng đến kết quả cụ thể." },
     ],
     tagline: ["Build Creators.", "Build Influence.", "Build Revenue."],
@@ -80,8 +91,8 @@ const vi = {
     eyebrow: "Năng lực cốt lõi",
     title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái",
     desc: [
-      "Meli Network kết nối ba năng lực Creator – Media – Commerce trong một hệ sinh thái thống nhất, tạo nên hành trình liền mạch từ phát triển Creator, xây dựng Content đến tạo ra giá trị thương mại.",
-      "Mỗi năng lực đảm nhận một vai trò riêng nhưng cùng hướng đến một mục tiêu: giúp Creator phát triển, giúp Brand kết nối và giúp Content tạo ra giá trị thực tế.",
+      "Meli Network kết nối ba năng lực Creator – Truyền thông – Thương mại trong một hệ sinh thái thống nhất, tạo nên hành trình liền mạch từ phát triển Creator, xây dựng nội dung đến tạo ra giá trị thương mại.",
+      "Mỗi năng lực đảm nhận một vai trò riêng nhưng cùng hướng đến một mục tiêu: giúp Creator phát triển, giúp thương hiệu kết nối và giúp nội dung tạo ra giá trị thực tế.",
     ],
     items: [
       {
@@ -99,20 +110,20 @@ const vi = {
       {
         tag: "02",
         name: "Meli Media",
-        kicker: "Build Influence · Kết nối Creator & Brand",
-        desc: "Kết nối Brand với Creator phù hợp và triển khai các hoạt động Creator Marketing & Social Media, tạo ra nội dung và sức ảnh hưởng phù hợp với mục tiêu thương hiệu.",
+        kicker: "Build Influence · Kết nối Creator & thương hiệu",
+        desc: "Kết nối thương hiệu với Creator phù hợp và triển khai Creator Marketing và các hoạt động trên mạng xã hội, tạo ra nội dung và sức ảnh hưởng phù hợp với mục tiêu thương hiệu.",
         points: [
-          "Kết nối Creator & Brand",
-          "Creator Marketing & Content Campaign",
-          "Triển khai Social Media",
+          "Kết nối Creator & thương hiệu",
+          "Creator Marketing & chiến dịch nội dung",
+          "Triển khai trên mạng xã hội",
           "Quản lý & tối ưu chiến dịch",
         ],
       },
       {
         tag: "03",
         name: "Meli Commerce",
-        kicker: "Build Revenue · Chuyển hóa Content thành doanh thu",
-        desc: "Khai thác sức mạnh của Creator và Content thông qua Affiliate, Livestream & Social Commerce, kết nối nội dung với hành vi mua hàng và doanh thu.",
+        kicker: "Build Revenue · Chuyển hóa nội dung thành doanh thu",
+        desc: "Khai thác sức mạnh của Creator và nội dung thông qua Affiliate, Livestream & Social Commerce, kết nối nội dung với hành vi mua hàng và doanh thu.",
         points: [
           "Affiliate",
           "Livestream Commerce",
@@ -129,11 +140,11 @@ const vi = {
     desc: "Những con số dưới đây phản ánh một phần quy mô hoạt động và những kết quả Meli đã ghi nhận trong quá trình đồng hành cùng Creator và Thương hiệu.",
     items: [
       {
-        title: "Biến sức mạnh Creator và Content thành giá trị thương mại thực",
+        title: "Biến sức mạnh Creator và nội dung thành giá trị thương mại thực",
         desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
       },
       {
-        title: "300K+ Followers — Hàng triệu lượt yêu thích",
+        title: "300K+ người theo dõi — Hàng triệu lượt yêu thích",
         desc: "Nội dung chân thật, nhất quán giúp Creator xây được kết nối lâu dài và giữ sức hút với cộng đồng của mình.",
       },
       {
@@ -150,7 +161,7 @@ const vi = {
   partners: {
     eyebrow: "Niềm tin từ đối tác",
     title: "Đồng\u00A0hành cùng Thương\u00A0hiệu & Nền\u00A0tảng",
-    desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, Marketing và Commerce.",
+    desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, truyền thông và thương mại.",
     logos: [
       { name: "Converse", src: "/logos/converse.png" },
       { name: "Puma", src: "/logos/puma.png" },
@@ -175,7 +186,7 @@ const vi = {
         quote:
           "Điều mình đánh giá cao ở Meli là cách làm việc rõ ràng và chuyên nghiệp. Các vấn đề về doanh thu, hợp tác hay bản quyền đều được team hỗ trợ khá nhanh.",
         name: "Anh N** Nguyễn",
-        role: "Đại diện Brand M*** M***",
+        role: "Đại diện thương hiệu M*** M***",
       },
       {
         quote:
@@ -201,7 +212,7 @@ const vi = {
         desc: "Tôn trọng công sức, lắng nghe nhu cầu và cùng Creator phát triển lâu dài.",
       },
       {
-        who: "Với Brand",
+        who: "Với thương hiệu",
         headline: "Làm việc rõ ràng, tạo ra kết quả.",
         desc: "Hiểu đúng nhu cầu, triển khai sát mục tiêu và có trách nhiệm với từng cam kết.",
       },
