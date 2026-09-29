@@ -70,7 +70,7 @@ export default function Header() {
 
           <a
             href="#contact"
-            className="hidden rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_28px_-8px_rgba(232,17,35,0.9)] transition-all hover:bg-brand-400 hover:shadow-[0_8px_34px_-6px_rgba(232,17,35,1)] sm:block"
+            className="hidden rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_28px_-8px_rgba(221,30,41,0.9)] transition-all hover:bg-brand-400 hover:shadow-[0_8px_34px_-6px_rgba(221,30,41,1)] sm:block"
           >
             {t.nav.cta}
           </a>

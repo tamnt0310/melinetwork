@@ -24,16 +24,16 @@ export default function Image() {
           padding: 72,
           backgroundColor: "#07070a",
           backgroundImage:
-            "radial-gradient(900px 600px at 78% 12%, rgba(232,17,35,0.42), transparent 62%)",
+            "radial-gradient(900px 600px at 78% 12%, rgba(221,30,41,0.42), transparent 62%)",
         }}
       >
         <svg width="96" height="85" viewBox="0 0 100 88">
           <g transform="matrix(-1 0 0 1 100 0)">
-            <path d={ARCH} fill="#e6e6ee" />
+            <path d={ARCH} fill="#B9C1CB" />
           </g>
-          <circle cx="60" cy="12" r="8" fill="#e6e6ee" />
-          <path d={ARCH} fill="#e81123" />
-          <circle cx="40" cy="12" r="8" fill="#e81123" />
+          <circle cx="60" cy="12" r="8" fill="#B9C1CB" />
+          <path d={ARCH} fill="#A60315" />
+          <circle cx="40" cy="12" r="8" fill="#A60315" />
         </svg>
 
         <div style={{ display: "flex", flexDirection: "column" }}>

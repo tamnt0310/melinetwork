@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_40px_-10px_rgba(232,17,35,0.95)] transition-all hover:bg-brand-400 hover:shadow-[0_14px_48px_-8px_rgba(232,17,35,1)]"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_40px_-10px_rgba(221,30,41,0.95)] transition-all hover:bg-brand-400 hover:shadow-[0_14px_48px_-8px_rgba(221,30,41,1)]"
             >
               {t.hero.ctaPrimary}
               <svg viewBox="0 0 16 16" className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none">

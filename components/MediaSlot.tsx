@@ -72,8 +72,8 @@ export default function MediaSlot({
         <defs>
           <linearGradient id={`${gid}-line`} x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#ffffff" stopOpacity="0.3" />
-            <stop offset="60%" stopColor="#e81123" stopOpacity="0.52" />
-            <stop offset="100%" stopColor="#e81123" stopOpacity="0" />
+            <stop offset="60%" stopColor="#dd1e29" stopOpacity="0.52" />
+            <stop offset="100%" stopColor="#dd1e29" stopOpacity="0" />
           </linearGradient>
         </defs>
 
@@ -94,7 +94,7 @@ export default function MediaSlot({
               <path
                 d="M -60 300 C 120 180, 260 270, 460 80"
                 fill="none"
-                stroke="#e81123"
+                stroke="#dd1e29"
                 strokeOpacity="0.55"
                 strokeWidth="2.2"
               />
@@ -109,7 +109,7 @@ export default function MediaSlot({
                 y="-140"
                 width={i === 3 ? 12 : 2}
                 height="680"
-                fill={i === 3 ? "#e81123" : `url(#${gid}-line)`}
+                fill={i === 3 ? "#dd1e29" : `url(#${gid}-line)`}
                 opacity={i === 3 ? 0.42 : 1}
               />
             ))}
@@ -130,7 +130,7 @@ export default function MediaSlot({
                 cy="120"
                 r="86"
                 fill="none"
-                stroke="#e81123"
+                stroke="#dd1e29"
                 strokeOpacity="0.5"
                 strokeWidth="2"
               />
