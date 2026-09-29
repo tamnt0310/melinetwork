@@ -151,8 +151,11 @@ const vi = {
         ],
       },
       {
-        title: "Xây dựng hệ sinh thái nội dung đa chủ đề",
-        desc: "Biến câu chuyện đời sống thành những series nội dung có sức hút và cộng đồng.",
+        title: "Xây dựng hệ sinh\u00A0thái nội\u00A0dung từ những điều bình\u00A0dị",
+        desc: [
+          "Từ những hoạt động đời sống rất tự nhiên và gần gũi, Bầu Trời Tích Cực biến những câu chuyện thường ngày thành các series nội dung có sức hút, tạo nên một cộng đồng yêu thích và gắn kết với Creator.",
+          "Với hàng triệu lượt yêu thích cùng hiệu quả thương mại nổi bật, các nội dung Affiliate của kênh duy trì doanh số hàng tháng ở mức hàng tỷ đồng — cho thấy những câu chuyện đời sống, khi được xây dựng đúng cách, có thể đồng thời tạo ra sức hút cộng đồng và giá trị thương mại.",
+        ],
       },
       {
         title: "Biến sức mạnh khán\u00A0giả thành giá\u00A0trị thương\u00A0mại",
@@ -410,8 +413,11 @@ const en: typeof vi = {
         ],
       },
       {
-        title: "Building a multi-topic content ecosystem",
-        desc: "Turning everyday stories into content series that draw an audience and build a community.",
+        title: "Building a content ecosystem out of ordinary life",
+        desc: [
+          "From everyday moments filmed naturally and close to home, Bầu Trời Tích Cực turns ordinary stories into content series with real pull, building a community that stays attached to the creator.",
+          "With millions of likes and strong commercial results, the channel's affiliate content sustains monthly sales in the billions of đồng — showing that everyday stories, built the right way, can create both community pull and commercial value.",
+        ],
       },
       {
         title: "Turning audience strength into commercial value",
