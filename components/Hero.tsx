@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="card-ring relative aspect-square overflow-hidden rounded-[2rem] bg-ink-900 shadow-[0_40px_90px_-40px_rgba(0,0,0,1)]">
             <MediaSlot
               src={images.hero}
-              alt="Góc studio sản xuất nội dung của Meli Network"
+              alt="Cái bắt tay qua màn hình điện thoại — Meli kết nối Creator và thương hiệu"
               seed={1}
               sizes="(max-width: 1024px) 100vw, 480px"
               priority

@@ -8,7 +8,7 @@
  * ==========================================================================*/
 
 export const images = {
-  hero: "/images/hero.jpg",                          // 1000 × 1000 (vuông) — góc studio sản xuất
+  hero: "/images/hero.webp",                         // 1254 × 1254 (vuông) — cái bắt tay qua màn hình
   about: "/images/so-do-he-sinh-thai.jpg",           //  903 × 677 (ngang 4:3) — sơ đồ hệ sinh thái
   // Khối "Con người Meli" nay không dùng ảnh. Hai file dưới vẫn nằm trong
   // public/images/ nếu sau này cần dùng lại:
