@@ -17,10 +17,10 @@ export default function About() {
           {/* Hình */}
           <Reveal className="order-2 lg:order-1">
             <div className="relative">
-              <div className="card-ring relative aspect-4/3 overflow-hidden rounded-[1.75rem] bg-ink-900">
+              <div className="card-ring relative aspect-3/4 overflow-hidden rounded-[1.75rem] bg-ink-900">
                 <MediaSlot
                   src={images.about}
-                  alt="Sơ đồ hệ sinh thái Meli Network: Nhà sáng tạo, Truyền thông, Chiến dịch và Thương mại kết nối quanh một đầu mối"
+                  alt="Đội ngũ Meli chụm tay giữa các mảnh ghép đỏ trắng"
                   seed={2}
                   sizes="(max-width: 1024px) 100vw, 560px"
                 />

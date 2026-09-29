@@ -9,7 +9,7 @@
 
 export const images = {
   hero: "/images/hero.webp",                         // 1254 × 1254 (vuông) — cái bắt tay qua màn hình
-  about: "/images/so-do-he-sinh-thai.jpg",           //  903 × 677 (ngang 4:3) — sơ đồ hệ sinh thái
+  about: "/images/doi-ngu-meli.webp",                // 1024 × 1536 (dọc 2:3) — đội ngũ chụm tay
   // Khối "Con người Meli" nay không dùng ảnh. Hai file dưới vẫn nằm trong
   // public/images/ nếu sau này cần dùng lại:
   //   founder-nguyen-thanh-tam.jpg (914 × 1218) — chân dung Founder
