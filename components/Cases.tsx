@@ -28,7 +28,11 @@ export default function Cases() {
                   <h3 className="text-balance text-lg font-bold leading-snug text-white sm:text-xl">
                     {c.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{c.desc}</p>
+                  {(Array.isArray(c.desc) ? c.desc : [c.desc]).map((paragraph) => (
+                    <p key={paragraph} className="mt-3 text-sm leading-relaxed text-muted">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </article>
             </Reveal>

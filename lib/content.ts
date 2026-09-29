@@ -144,8 +144,11 @@ const vi = {
         desc: "Từ phát triển nội dung đến chuyển đổi, Meli xây dựng chuỗi giá trị có thể đo lường.",
       },
       {
-        title: "300K+ người theo dõi — Hàng triệu lượt yêu thích",
-        desc: "Nội dung chân thật, nhất quán giúp Creator xây được kết nối lâu dài và giữ sức hút với cộng đồng của mình.",
+        title: "300K+ người theo\u00A0dõi · 10M+ lượt yêu\u00A0thích",
+        desc: [
+          "Từ nội dung chân thật, truyền cảm hứng và nhất quán với cá tính riêng, Phanh Phiêu Lưu Ký đã xây dựng được một cộng đồng yêu thích khám phá, trải nghiệm và lối sống khác biệt.",
+          "Một hành trình từ câu chuyện cá nhân → nội dung có giá trị → cộng đồng gắn kết → sức ảnh hưởng, cho thấy khi Creator có bản sắc rõ ràng và chiến lược nội dung nhất quán, nội dung có thể trở thành một tài sản tạo ra giá trị lâu dài.",
+        ],
       },
       {
         title: "Xây dựng hệ sinh thái nội dung đa chủ đề",
@@ -400,8 +403,11 @@ const en: typeof vi = {
         desc: "From content development through to conversion, Meli builds a value chain you can actually measure.",
       },
       {
-        title: "300K+ followers — millions of likes",
-        desc: "Honest, consistent content helps creators build lasting connections and hold their community's attention.",
+        title: "300K+ followers · 10M+ likes",
+        desc: [
+          "Through honest, inspiring content that stays true to a distinct personality, Phanh Phiêu Lưu Ký has built a community drawn to exploration, experience and a different way of living.",
+          "A journey from personal story → content with real value → a connected community → genuine influence. It shows that when a creator has a clear identity and a consistent content strategy, content becomes an asset that keeps creating value.",
+        ],
       },
       {
         title: "Building a multi-topic content ecosystem",
