@@ -3,7 +3,6 @@
 import { useLang } from "@/lib/lang";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
-import { rich } from "@/lib/rich";
 
 export default function Culture() {
   const { t } = useLang();
@@ -20,18 +19,19 @@ export default function Culture() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading eyebrow={t.culture.eyebrow} title={t.culture.title} align="center" />
 
-        <div className="mx-auto mt-7 max-w-3xl text-center">
-          <Reveal delay={140}>
-            <p className="text-pretty text-base leading-relaxed text-fg/90 sm:text-lg">
-              {rich(t.culture.lead)}
-            </p>
-          </Reveal>
-          <Reveal delay={200}>
-            <p className="mt-5 text-pretty text-base leading-relaxed text-muted">
-              {rich(t.culture.body)}
-            </p>
-          </Reveal>
-        </div>
+        {/* Đoạn đầu là câu tuyên ngôn nên để lớn và sáng; đoạn sau là diễn
+            giải nên nhỏ và mờ hơn. Phân cấp rõ để hai khối không bị đọc như
+            một mảng chữ dài. */}
+        <Reveal delay={140}>
+          <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-xl font-medium leading-[1.55] text-fg sm:text-[25px]">
+            {t.culture.lead}
+          </p>
+        </Reveal>
+        <Reveal delay={200}>
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-base leading-[1.75] text-muted">
+            {t.culture.body}
+          </p>
+        </Reveal>
 
         {/* Cam kết với từng nhóm đối tác */}
         <div className="mt-14 grid gap-5 md:grid-cols-3">

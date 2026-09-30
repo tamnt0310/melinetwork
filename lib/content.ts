@@ -214,9 +214,9 @@ const vi = {
     founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
     title: "Con\u00A0người là nền\u00A0tảng của Meli",
     lead:
-      "Công nghệ thay đổi, nền tảng thay đổi, thị trường thay đổi. Nhưng Meli lựa chọn xây dựng những giá trị bền vững từ **con người, sự tin tưởng và cách chúng ta đồng hành cùng nhau**.",
+      "Công nghệ thay đổi, nền tảng thay đổi, thị trường thay đổi. Nhưng Meli lựa chọn xây dựng những giá trị bền vững từ con người, sự tin tưởng và cách chúng ta đồng hành cùng nhau.",
     body:
-      "Meli tin rằng một đội ngũ tốt không chỉ cần năng lực, mà còn cần **tận tâm, trách nhiệm và minh bạch** trong cách làm việc.",
+      "Meli tin rằng một đội ngũ tốt không chỉ cần năng lực, mà còn cần tận tâm, trách nhiệm và minh bạch trong cách làm việc.",
     commitments: [
       {
         who: "Với Creator",
@@ -480,9 +480,9 @@ const en: typeof vi = {
     founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
     title: "People are the foundation of Meli",
     lead:
-      "Technology changes, platforms change, markets change. But Meli chooses to build lasting value from **people, trust, and the way we work alongside one another**.",
+      "Technology changes, platforms change, markets change. But Meli chooses to build lasting value from people, trust, and the way we work alongside one another.",
     body:
-      "Meli believes a good team needs more than capability — it needs **dedication, responsibility and transparency** in how the work gets done.",
+      "Meli believes a good team needs more than capability — it needs dedication, responsibility and transparency in how the work gets done.",
     commitments: [
       {
         who: "With creators",
