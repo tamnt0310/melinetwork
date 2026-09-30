@@ -73,10 +73,9 @@ const vi = {
     title: "Từ nội\u00A0dung đến giá\u00A0trị thực",
     // Cụm nằm giữa **...** được in đậm trên trang (xem lib/rich.tsx)
     lead:
-      "Meli Network là hệ sinh thái **Creator, Content & Commerce**, đồng hành cùng Creator trong phát triển kênh, nội dung và thương hiệu cá nhân; đồng thời kết nối Creator với thương hiệu và các cơ hội hợp tác.",
+      "Meli Network kết nối **Creator, Content & Commerce**, đồng hành cùng Creator và thương hiệu từ phát triển, xây dựng nội dung đến kết nối cơ hội và thương mại hóa.",
     body: [
-      "Meli đứng phía sau Creator và thương hiệu, cùng tham gia từ **phát triển con người, xây dựng nội dung, kết nối cơ hội đến triển khai và thương mại hóa**.",
-      "Thông qua 3 trụ cột **Meli MCN – Meli Media – Meli Commerce**, Meli kết nối Creator, thương hiệu và nội dung thành một hệ thống liền mạch, hướng tới những giá trị và kết quả thực tế.",
+      "Thông qua 3 trụ cột **Meli MCN – Meli Media – Meli Commerce**, Meli tạo nên một hệ thống liền mạch để nội dung tạo ra ảnh hưởng, và ảnh hưởng tạo ra giá trị thực.",
     ],
     closing: ["Meli không chỉ tạo ra nội dung.", "Meli xây dựng hệ thống để nội dung tạo ra giá trị."],
     pillars: [
@@ -341,10 +340,9 @@ const en: typeof vi = {
     eyebrow: "An ecosystem connecting Creator, Content & Commerce",
     title: "From content to real value",
     lead:
-      "Meli Network is a **Creator, Content & Commerce** ecosystem, standing beside creators as they grow their channels, content and personal brands — while connecting them with brands and partnership opportunities.",
+      "Meli Network connects **Creator, Content & Commerce**, working with creators and brands from development and content building through to opportunities and monetisation.",
     body: [
-      "Meli works behind both creators and brands, involved all the way from **developing people and building content to connecting opportunities, execution and monetisation**.",
-      "Through three pillars — **Meli MCN – Meli Media – Meli Commerce** — Meli connects creators, brands and content into one seamless system, aimed at real value and real results.",
+      "Through three pillars — **Meli MCN – Meli Media – Meli Commerce** — Meli builds one seamless system where content creates influence, and influence creates real value.",
     ],
     closing: ["Meli doesn't just create content.", "Meli builds the system that turns content into value."],
     pillars: [
