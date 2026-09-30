@@ -168,8 +168,8 @@ const vi = {
 
   partners: {
     eyebrow: "Niềm tin từ đối tác",
-    title: "Đồng\u00A0hành cùng Thương\u00A0hiệu & Nền\u00A0tảng",
-    desc: "Meli Network là đối tác của các nền tảng lớn và đồng hành cùng nhiều thương hiệu trong các hoạt động Creator, truyền thông và thương mại.",
+    title: "Thương\u00A0hiệu đồng\u00A0hành",
+    desc: "Meli đồng hành cùng các thương hiệu trong hành trình kết nối Creator, nội dung và giá trị thương mại.",
     logos: [
       { name: "Converse", src: "/logos/converse.png" },
       { name: "Puma", src: "/logos/puma.png" },
@@ -432,8 +432,8 @@ const en: typeof vi = {
 
   partners: {
     eyebrow: "Trusted by partners",
-    title: "Working alongside brands and platforms",
-    desc: "Meli Network partners with major platforms and works alongside many brands across Creator, Marketing and Commerce.",
+    title: "Brands we work with",
+    desc: "Meli works alongside brands on the journey that connects creators, content and commercial value.",
     logos: [
       { name: "Converse", src: "/logos/converse.png" },
       { name: "Puma", src: "/logos/puma.png" },
