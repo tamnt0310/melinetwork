@@ -88,11 +88,8 @@ const vi = {
 
   services: {
     eyebrow: "Năng lực cốt lõi",
-    title: "Ba năng\u00A0lực cốt\u00A0lõi – Một hệ sinh\u00A0thái",
-    desc: [
-      "Meli Network kết nối ba năng lực Creator – Truyền thông – Thương mại trong một hệ sinh thái thống nhất, tạo nên hành trình liền mạch từ phát triển Creator, xây dựng nội dung đến tạo ra giá trị thương mại.",
-      "Mỗi năng lực đảm nhận một vai trò riêng nhưng cùng hướng đến một mục tiêu: giúp Creator phát triển, giúp thương hiệu kết nối và giúp nội dung tạo ra giá trị thực tế.",
-    ],
+    title: "Ba năng\u00A0lực – Một hệ sinh\u00A0thái",
+    desc: ["Từ phát triển Creator, xây dựng nội dung đến tạo ra giá trị thương mại."],
     items: [
       {
         tag: "01",
@@ -355,11 +352,8 @@ const en: typeof vi = {
 
   services: {
     eyebrow: "Core capabilities",
-    title: "Three core capabilities – one ecosystem",
-    desc: [
-      "Meli Network connects three capabilities — Creator, Media and Commerce — in one unified ecosystem, creating a seamless journey from developing creators and building content to generating commercial value.",
-      "Each capability plays its own role, but all share one goal: helping creators grow, helping brands connect, and helping content create real value.",
-    ],
+    title: "Three capabilities – one ecosystem",
+    desc: ["From developing creators and building content through to creating commercial value."],
     items: [
       {
         tag: "01",
