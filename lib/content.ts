@@ -210,24 +210,22 @@ const vi = {
     founder: { name: "Nguyễn Thanh Tâm", role: "Founder & CEO" },
     title: "Con\u00A0người là nền\u00A0tảng của Meli",
     lead:
-      "Công nghệ thay đổi, nền tảng thay đổi, thị trường thay đổi. Nhưng Meli lựa chọn xây dựng những giá trị bền vững từ con người, sự tin tưởng và cách chúng ta đồng hành cùng nhau.",
-    body:
-      "Meli tin rằng một đội ngũ tốt không chỉ cần năng lực, mà còn cần tận tâm, trách nhiệm và minh bạch trong cách làm việc.",
+      "Công nghệ và thị trường luôn thay đổi. Meli chọn xây dựng giá trị bền vững từ con người, sự tin tưởng và cách chúng ta đồng hành cùng nhau.",
     commitments: [
       {
         who: "Với Creator",
         headline: "Đồng hành thật sự.",
-        desc: "Tôn trọng công sức, lắng nghe nhu cầu và cùng Creator phát triển lâu dài.",
+        desc: "Tôn trọng, lắng nghe và cùng phát triển lâu dài.",
       },
       {
-        who: "Với thương hiệu",
-        headline: "Làm việc rõ ràng, tạo ra kết quả.",
-        desc: "Hiểu đúng nhu cầu, triển khai sát mục tiêu và có trách nhiệm với từng cam kết.",
+        who: "Với Thương hiệu",
+        headline: "Rõ ràng, trách nhiệm, hiệu quả.",
+        desc: "Hiểu đúng nhu cầu và cùng hướng đến kết quả.",
       },
       {
         who: "Với Cộng đồng & Đối tác",
         headline: "Cùng học hỏi, chia sẻ và tạo giá trị.",
-        desc: "Kết nối nguồn lực, lan tỏa kiến thức và cùng xây dựng một cộng đồng Creator tích cực, phát triển bền vững.",
+        desc: "Kết nối nguồn lực để cùng phát triển.",
       },
     ],
     valuesIntro: "Ba điều Meli luôn giữ trong cách làm việc",
@@ -472,24 +470,22 @@ const en: typeof vi = {
     founder: { name: "Nguyen Thanh Tam", role: "Founder & CEO" },
     title: "People are the foundation of Meli",
     lead:
-      "Technology changes, platforms change, markets change. But Meli chooses to build lasting value from people, trust, and the way we work alongside one another.",
-    body:
-      "Meli believes a good team needs more than capability — it needs dedication, responsibility and transparency in how the work gets done.",
+      "Technology and markets never stop changing. Meli chooses to build lasting value from people, trust, and the way we work alongside one another.",
     commitments: [
       {
         who: "With creators",
         headline: "Real partnership.",
-        desc: "Respecting their effort, listening to what they need, and growing together for the long term.",
+        desc: "Respect, listening, and growing together for the long term.",
       },
       {
         who: "With brands",
-        headline: "Clear work, real results.",
-        desc: "Understanding the brief, executing close to the goal, and owning every commitment.",
+        headline: "Clear, accountable, effective.",
+        desc: "Understanding the real need and working toward the result together.",
       },
       {
         who: "With the community & partners",
         headline: "Learning, sharing and creating value together.",
-        desc: "Connecting resources, spreading knowledge, and building a positive, sustainable creator community.",
+        desc: "Connecting resources so everyone grows together.",
       },
     ],
     valuesIntro: "Three things Meli always holds to",

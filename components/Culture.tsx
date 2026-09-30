@@ -27,12 +27,6 @@ export default function Culture() {
             {t.culture.lead}
           </p>
         </Reveal>
-        <Reveal delay={200}>
-          <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-base leading-[1.75] text-muted">
-            {t.culture.body}
-          </p>
-        </Reveal>
-
         {/* Cam kết với từng nhóm đối tác */}
         <div className="mt-14 grid gap-5 md:grid-cols-3">
           {t.culture.commitments.map((c, i) => (
