@@ -133,7 +133,7 @@ const vi = {
   cases: {
     eyebrow: "Dự án tiêu biểu",
     title: "Những con\u00A0số trên hành\u00A0trình phát\u00A0triển",
-    desc: "Những con số dưới đây phản ánh một phần quy mô hoạt động và những kết quả Meli đã ghi nhận trong quá trình đồng hành cùng Creator và Thương hiệu.",
+    desc: "Một số dấu ấn từ hành trình đồng hành cùng Creator và thương hiệu.",
     items: [
       {
         title: "Lan tỏa những thông\u00A0điệp chạm đến hàng\u00A0triệu người",
@@ -397,7 +397,7 @@ const en: typeof vi = {
   cases: {
     eyebrow: "Selected work",
     title: "Numbers from the journey so far",
-    desc: "The figures below reflect part of the scale we operate at and the results Meli has recorded while working alongside creators and brands.",
+    desc: "A few milestones from the journey alongside creators and brands.",
     items: [
       {
         title: "Messages that reach millions",
